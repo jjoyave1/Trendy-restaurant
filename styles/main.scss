@@ -1,0 +1,99 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
+$logoFont:'Amatic SC', cursive;
+
+*{
+  @include outer-container();
+}
+
+aside{
+  @include span-columns(2);
+  background-color: orange;
+  display: block;
+  height: 1000px;
+  float: left;
+}
+
+.wrapper{
+  @include span-columns(10);
+  height: 100px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: orange;
+  display: inline-block;
+}
+
+.logo {
+  font-family: $logoFont;
+  color: black;
+  // border-top: 1px solid black;
+  margin-top: 33px;
+
+
+  ul {
+    list-style: none;
+    display: inline;
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  .textA {
+  font-size: 3.4em;
+  margin-right: 8px;
+  }
+
+  .textReally {
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textTrendy {
+    font-size: 2.4em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textRestaurant {
+    font-size: 2em;
+    border-top: 1px solid black;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px;
+
+}
+
+.tabs{
+  width: 63%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+
+}
+
+.restaurantScene{
+  width: 33%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: right;
+}

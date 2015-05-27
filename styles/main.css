@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+* {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+*::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  background-color: orange;
+  display: block;
+  height: 1000px;
+  float: left; }
+
+aside:last-child {
+  margin-right: 0; }
+
+.wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  height: 100px; }
+
+.wrapper:last-child {
+  margin-right: 0; }
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: orange;
+  display: inline-block; }
+
+.logo {
+  font-family: "Amatic SC", cursive;
+  color: black;
+  margin-top: 33px; }
+
+.logo ul {
+  list-style: none;
+  display: inline; }
+
+.logo li {
+  display: inline-flex; }
+
+.logo .textA {
+  font-size: 3.4em;
+  margin-right: 8px; }
+
+.logo .textReally {
+  font-size: 2.8em;
+  border-top: 1px solid black;
+  margin-right: 8px; }
+
+.logo .textTrendy {
+  font-size: 2.4em;
+  border-top: 1px solid black;
+  margin-right: 8px; }
+
+.logo .textRestaurant {
+  font-size: 2em;
+  border-top: 1px solid black; }
+
+.logo img {
+  width: 40px;
+  height: 40px; }
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px; }
+
+.tabs {
+  width: 63%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: left; }
+
+.restaurantScene {
+  width: 33%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: right; }
