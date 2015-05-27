@@ -1,0 +1,53 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
+*{
+  @include outer-container();
+}
+
+aside{
+  @include span-columns(2);
+  background-color: orange;
+  display: block;
+  height: 1000px;
+  float: left;
+}
+
+.wrapper{
+  @include span-columns(10);
+  height: 100px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: orange;
+  display: inline-block;
+}
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px;
+
+}
+
+.tabs{
+  width: 63%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+
+}
+
+.restaurantScene{
+  width: 33%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: right;
+}
