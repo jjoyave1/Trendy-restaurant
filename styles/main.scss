@@ -1,10 +1,113 @@
+<<<<<<< HEAD
 
+
+
+=======
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
+*{
+  @include outer-container();
+}
+
+aside{
+  @include span-columns(2);
+  background-color: orange;
+  display: block;
+  height: 1000px;
+  float: left;
+}
 
 .gmap{
   background-color: grey;
   width: 30%;
   height: 360px;
-  right: 0px;
+  right: 50px;
 
 }
 
+.wrapper{
+  @include span-columns(10);
+  height: 100px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: orange;
+  display: inline-block;
+}
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px;
+
+}
+
+.tabBoxWrapper{
+  width: 63%;
+  height: 400px;
+  background-color: yellow;
+  margin: 1px;
+  display: block;
+  float: left;
+
+  .tabBox {
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  padding: 0 0 0.3em 0;
+  display: block;
+  width: 350px;
+  height: 22px;
+  }
+  .tabBtns {
+    display: inline-block;
+    width: auto;
+    margin: 0.25px;
+  }
+
+  .tabTitle {
+    text-decoration: none;
+    color: #42454a;
+    background-color: #dedbde;
+    border: solid 1px #c9c3ba;
+    border-bottom: none;
+    padding: 0.3em;
+  }
+
+  .tabTitle:hover {
+    background-color: #f1f0ee;
+  }
+
+  .selected {
+    color: #000;
+    background-color: #f1f0ee;
+    font-weight: bold;
+    padding: 0.7em 0.3em 0.38em 0.3em;
+  }
+
+  .tabContent {
+    border: 1px solid #c9c3ba;
+    padding: 0.5em;
+    background-color: #f1f0ee;
+    width: 570px;
+    height: 300px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+
+.restaurantScene{
+  width: 33%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: right;
+}
+>>>>>>> 60a3095bf77b3d11f2f6e72992b5449822b76852

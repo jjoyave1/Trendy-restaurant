@@ -3,14 +3,70 @@
 <head>
   <title>Project Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
   <div class="container">
-    <h1>Restaurant</h1>
+
+  <aside>Sidebar</aside>
+
+  <div class="wrapper">
+    <header></header>
+
+    <div class="picScroll">sidescrolling pic bar</div>
+
+  <!--   JOE TAB BOX BUILD MAY 27 -->
+
+    <div class="tabBoxWrapper">
+
+
+      <ul class="tabBox">
+        <li class="tabBtns"><a href="#Menu"  class = "tabTitle tabTitleMenu">Menu</a></li>
+        <li class="tabBtns"><a href="#Story" class = "tabTitle tabTitleStory">Our Story</a></li>
+        <li class="tabBtns"><a href="#History" class = "tabTitle tabTitleHistory">Restaurant History</a></li>
+        <li class="tabBtns"><a href="#Drinks" class = "tabTitle tabTitleDrinks">Drinks</a></li>
+
+      </ul>
+
+      <div class="tabContent" id="about">
+        <div id = "menuBox">
+          <p id="menu-tab">Pepper jack who moved my cheese pecorino. Fondue pecorino say cheese cottage cheese cottage cheese fromage frais cheesy feet macaroni cheese. Manchego pepper jack airedale monterey jack bocconcini ricotta blue castello airedale. Rubber cheese lancashire.</p>
+          <p id ="story-tab" class = "hide">Ricotta rubber cheese cheeseburger. Hard cheese jarlsberg blue castello halloumi caerphilly hard cheese blue castello brie. Gouda ricotta monterey jack cut the cheese st. agur blue cheese cheesy feet smelly cheese cottage cheese. Monterey jack.</p>
+          <p id="history-tab" class = "hide">Ricotta edam paneer. Bavarian bergkase fromage cheese on toast pecorino cut the cheese smelly cheese danish fontina blue castello. Camembert de normandie when the cheese comes out everybody's happy everyone loves port-salut cream cheese cheesecake stinking bishop cheese strings. St. agur blue cheese jarlsberg parmesan parmesan.</p>
+          <p id="drinks-tab" class = "hide">Blue castello stinking bishop croque monsieur. Hard cheese cheese strings cheese and wine who moved my cheese babybel manchego hard cheese emmental. Queso monterey jack stinking bishop mascarpone cheddar smelly cheese airedale the big cheese. Cheeseburger croque monsieur manchego stilton hard cheese cheese and biscuits mascarpone cheesy feet. Port-salut cheddar swiss bavarian bergkase.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  <!-- END TAB BOX -->
+
+
+    <div class="restaurantScene">picture of inside of restaurant</div>
+
+
   </div>
+
+
+  </div>
+
+
+
+
+
+<div class="gmap">Our location
+
+  <iframe width="600" height="450" frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?q=115+M.L.K.+Jr+Dr+NW,+Atlanta,+GA,+United+States&key=AIzaSyCuLGTB7wksJsHHNPl7ROzf-r3VvgXobmc"></iframe>
+  </div>
+
+
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
@@ -25,10 +81,6 @@
 
 
 
-<div class="gmap">Our location</div>
-
-<iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=115+M.L.K.+Jr+Dr+NW,+Atlanta,+GA,+United+States&key=..."></iframe>
 
 </div>
 
