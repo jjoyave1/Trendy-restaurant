@@ -1,4 +1,3 @@
-// START OF TAB BOX FUNCTIONS
 
 $('.tabTitleMenu').on('click', function(){
   $('#menu-tab').removeClass('hide');
@@ -53,4 +52,3 @@ $('.tabTitleDrinks').on('click', function(){
   $('.tabTitleStory').removeClass('selected');
 
 });
-
