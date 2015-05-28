@@ -1,6 +1,8 @@
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/neat/neat';
 
+$logoFont:'Amatic SC', cursive;
+
 *{
   @include outer-container();
 }
@@ -23,6 +25,50 @@ header {
   height: 120px;
   background-color: orange;
   display: inline-block;
+}
+
+.logo {
+  font-family: $logoFont;
+  color: black;
+  // border-top: 1px solid black;
+  margin-top: 33px;
+
+
+  ul {
+    list-style: none;
+    display: inline;
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  .textA {
+  font-size: 3.4em;
+  margin-right: 8px;
+  }
+
+  .textReally {
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textTrendy {
+    font-size: 2.4em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textRestaurant {
+    font-size: 2em;
+    border-top: 1px solid black;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .picScroll {
