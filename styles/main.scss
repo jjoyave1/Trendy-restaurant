@@ -35,7 +35,7 @@ header {
 
 .tabBoxWrapper{
   width: 63%;
-  height: 400px;
+  height: 450px;
   background-color: yellow;
   margin: 1px;
   display: block;
@@ -46,8 +46,12 @@ header {
   margin: 30px 0 0 0;
   padding: 0 0 0.3em 0;
   display: block;
-  width: 350px;
+  width: 410px;
   height: 22px;
+  }
+
+  .tabBox::after{
+    display: none;
   }
   .tabBtns {
     display: inline-block;
@@ -62,6 +66,7 @@ header {
     border: solid 1px #c9c3ba;
     border-bottom: none;
     padding: 0.3em;
+    width:100%;
   }
 
   .tabTitle:hover {
