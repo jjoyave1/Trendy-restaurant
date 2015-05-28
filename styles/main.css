@@ -45,6 +45,40 @@ header {
   background-color: orange;
   display: inline-block; }
 
+.logo {
+  font-family: "Amatic SC", cursive;
+  color: black;
+  margin-top: 33px; }
+
+.logo ul {
+  list-style: none;
+  display: inline; }
+
+.logo li {
+  display: inline-flex; }
+
+.logo .textA {
+  font-size: 3.4em;
+  margin-right: 8px; }
+
+.logo .textReally {
+  font-size: 2.8em;
+  border-top: 1px solid black;
+  margin-right: 8px; }
+
+.logo .textTrendy {
+  font-size: 2.4em;
+  border-top: 1px solid black;
+  margin-right: 8px; }
+
+.logo .textRestaurant {
+  font-size: 2em;
+  border-top: 1px solid black; }
+
+.logo img {
+  width: 40px;
+  height: 40px; }
+
 .picScroll {
   width: 100%;
   height: 150px;
