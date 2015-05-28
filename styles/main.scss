@@ -1,12 +1,15 @@
-<<<<<<< HEAD
+
 @import "styles/vendor/bourbon/bourbon";
 @import "styles/vendor/neat/neat";
 
 
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif; }
 
-=======
-@import 'vendor/bourbon/bourbon';
-@import 'vendor/neat/neat';
+$logoFont:'Amatic SC', cursive;
+
 
 *{
   @include outer-container();
@@ -32,6 +35,97 @@ header {
   display: inline-block;
 }
 
+.logo {
+  font-family: $logoFont;
+  color: black;
+  // border-top: 1px solid black;
+  margin-top: 33px;
+
+
+  ul {
+    list-style: none;
+    display: inline;
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  .textA {
+  font-size: 3.4em;
+  margin-right: 8px;
+  }
+
+  .textReally {
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textTrendy {
+    font-size: 2.4em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textRestaurant {
+    font-size: 2em;
+    border-top: 1px solid black;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.zocial-twitter {
+  font-size: 30px;
+  border-right: 3px solid black;
+  background-color: lightskyblue;
+  border: 3px solid black;
+  width: 4%;
+  height: 45px;
+  margin-right: 2px; }
+
+.zocial-instagram {
+  font-size: 30px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #663300;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0;
+  height:46px;
+}
+
+
+.zocial-facebook {
+  font-size: 30px;
+  width: 47px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #3b5998;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0; }
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px;
+
+}
+
+.tabs{
+  width: 63%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+}
 .picScroll {
   width: 100%;
   height: 150px;
@@ -42,7 +136,7 @@ header {
 
 .tabBoxWrapper{
   width: 63%;
-  height: 400px;
+  height: 450px;
   background-color: yellow;
   margin: 1px;
   display: block;
@@ -53,8 +147,12 @@ header {
   margin: 30px 0 0 0;
   padding: 0 0 0.3em 0;
   display: block;
-  width: 350px;
+  width: 410px;
   height: 22px;
+  }
+
+  .tabBox::after{
+    display: none;
   }
   .tabBtns {
     display: inline-block;
@@ -69,6 +167,7 @@ header {
     border: solid 1px #c9c3ba;
     border-bottom: none;
     padding: 0.3em;
+    width:100%;
   }
 
   .tabTitle:hover {
@@ -94,9 +193,10 @@ header {
     display: none;
   }
 
+
 }
 
-.restaurantScene{
+.restaurantScene {
   width: 33%;
   height: 200px;
   background-color: yellow;
@@ -104,4 +204,4 @@ header {
   display: inline-block;
   float: right;
 }
->>>>>>> 60a3095bf77b3d11f2f6e72992b5449822b76852
+
