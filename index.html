@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles/vendor/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/svwp_style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
@@ -32,7 +33,7 @@
   </header><!-- this is the end of the header div-->
 
 
-
+    <div id="basic" class="svwp">
     <div class="picScroll">
 
       <ul class="foodPics">
@@ -41,13 +42,13 @@
     <script type="template" id="foodTemplate">
       <li>
         <div>
-          <img src="<%= url_s %>">
+          <img src="<%= url_m %>">
 
         </div>
       </li>
     </script>
 
-
+    </div>
     </div><!--this is the end of the picScroll div-->
 
 
@@ -113,6 +114,7 @@
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
+  <script src="scripts/vendor/slideViewerPro.1.0.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>
