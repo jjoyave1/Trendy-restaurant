@@ -85,6 +85,20 @@ header {
   background-color: gold;
   margin: 1px; }
 
+.tabs {
+  width: 63%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: left; }
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px; }
+
 .tabBoxWrapper {
   width: 63%;
   height: 450px;
