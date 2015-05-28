@@ -1,3 +1,42 @@
+var foodpicsTemplate = _.template($('#foodTemplate').text());
+
+var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
+
+var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=5704-72157653593281981&format=json&extras=url_s&callback=jsonFlickrApi';
+
+
+$.ajax(url, {
+  dataType: 'jsonp',
+  jsonpCallback: 'jsonFlickrApi',
+  success: function(data) {
+    var photos = data.photos.photo;
+    processFlickr(photos);
+  }
+})
+
+
+
+function processFlickr(pics) {
+
+    pics.forEach(function(pic) {
+
+    var $element = foodpicsTemplate(pic);
+    $('.foodPics').append($element);
+
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
+
 // START OF TAB BOX FUNCTIONS
 
 $('.tabTitleMenu').on('click', function(){

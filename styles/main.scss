@@ -2,7 +2,7 @@
 @import 'vendor/neat/neat';
 
 
-$logoFont:'Amatic SC', cursive;
+$logoFont: 'Amatic SC', cursive;
 
 
 *{
@@ -82,21 +82,9 @@ header {
 
 }
 
-.tabs{
-  width: 63%;
-  height: 200px;
-  background-color: yellow;
-  margin: 1px;
-  display: inline-block;
-  float: left;
 
-.picScroll {
-  width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px;
 
-}
+
 
 .tabBoxWrapper{
   width: 63%;
@@ -152,8 +140,8 @@ header {
     display: none;
   }
 
-
 }
+
 
 .restaurantScene{
   width: 33%;
@@ -163,3 +151,4 @@ header {
   display: inline-block;
   float: right;
 }
+

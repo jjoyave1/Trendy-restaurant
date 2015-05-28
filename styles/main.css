@@ -10,11 +10,10 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-
-*::after {
-  clear: both;
-  content: "";
-  display: table; }
+  *::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 aside {
   float: left;
@@ -25,9 +24,8 @@ aside {
   display: block;
   height: 1000px;
   float: left; }
-
-aside:last-child {
-  margin-right: 0; }
+  aside:last-child {
+    margin-right: 0; }
 
 .wrapper {
   float: left;
@@ -35,9 +33,8 @@ aside:last-child {
   margin-right: 2.35765%;
   width: 82.94039%;
   height: 100px; }
-
-.wrapper:last-child {
-  margin-right: 0; }
+  .wrapper:last-child {
+    margin-right: 0; }
 
 header {
   width: 100%;
@@ -45,59 +42,39 @@ header {
   background-color: orange;
   display: inline-block; }
 
-<<<<<<< HEAD
 .logo {
   font-family: "Amatic SC", cursive;
   color: black;
   margin-top: 33px; }
+  .logo ul {
+    list-style: none;
+    display: inline; }
+  .logo li {
+    display: inline-flex; }
+  .logo .textA {
+    font-size: 3.4em;
+    margin-right: 8px; }
+  .logo .textReally {
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    margin-right: 8px; }
+  .logo .textTrendy {
+    font-size: 2.4em;
+    border-top: 1px solid black;
+    margin-right: 8px; }
+  .logo .textRestaurant {
+    font-size: 2em;
+    border-top: 1px solid black; }
+  .logo img {
+    width: 40px;
+    height: 40px; }
 
-.logo ul {
-  list-style: none;
-  display: inline; }
-
-.logo li {
-  display: inline-flex; }
-
-.logo .textA {
-  font-size: 3.4em;
-  margin-right: 8px; }
-
-.logo .textReally {
-  font-size: 2.8em;
-  border-top: 1px solid black;
-  margin-right: 8px; }
-
-.logo .textTrendy {
-  font-size: 2.4em;
-  border-top: 1px solid black;
-  margin-right: 8px; }
-
-.logo .textRestaurant {
-  font-size: 2em;
-  border-top: 1px solid black; }
-
-.logo img {
-  width: 40px;
-  height: 40px; }
-
-=======
->>>>>>> 60a3095bf77b3d11f2f6e72992b5449822b76852
 .picScroll {
   width: 100%;
   height: 150px;
   background-color: gold;
   margin: 1px; }
 
-<<<<<<< HEAD
-.tabs {
-  width: 63%;
-  height: 200px;
-  background-color: yellow;
-  margin: 1px;
-  display: inline-block;
-  float: left; }
-
-=======
 .tabBoxWrapper {
   width: 63%;
   height: 400px;
@@ -105,48 +82,40 @@ header {
   margin: 1px;
   display: block;
   float: left; }
+  .tabBoxWrapper .tabBox {
+    list-style-type: none;
+    margin: 30px 0 0 0;
+    padding: 0 0 0.3em 0;
+    display: block;
+    width: 350px;
+    height: 22px; }
+  .tabBoxWrapper .tabBtns {
+    display: inline-block;
+    width: auto;
+    margin: 0.25px; }
+  .tabBoxWrapper .tabTitle {
+    text-decoration: none;
+    color: #42454a;
+    background-color: #dedbde;
+    border: solid 1px #c9c3ba;
+    border-bottom: none;
+    padding: 0.3em; }
+  .tabBoxWrapper .tabTitle:hover {
+    background-color: #f1f0ee; }
+  .tabBoxWrapper .selected {
+    color: #000;
+    background-color: #f1f0ee;
+    font-weight: bold;
+    padding: 0.7em 0.3em 0.38em 0.3em; }
+  .tabBoxWrapper .tabContent {
+    border: 1px solid #c9c3ba;
+    padding: 0.5em;
+    background-color: #f1f0ee;
+    width: 570px;
+    height: 300px; }
+  .tabBoxWrapper .hide {
+    display: none; }
 
-.tabBoxWrapper .tabBox {
-  list-style-type: none;
-  margin: 30px 0 0 0;
-  padding: 0 0 0.3em 0;
-  display: block;
-  width: 350px;
-  height: 22px; }
-
-.tabBoxWrapper .tabBtns {
-  display: inline-block;
-  width: auto;
-  margin: 0.25px; }
-
-.tabBoxWrapper .tabTitle {
-  text-decoration: none;
-  color: #42454a;
-  background-color: #dedbde;
-  border: solid 1px #c9c3ba;
-  border-bottom: none;
-  padding: 0.3em; }
-
-.tabBoxWrapper .tabTitle:hover {
-  background-color: #f1f0ee; }
-
-.tabBoxWrapper .selected {
-  color: #000;
-  background-color: #f1f0ee;
-  font-weight: bold;
-  padding: 0.7em 0.3em 0.38em 0.3em; }
-
-.tabBoxWrapper .tabContent {
-  border: 1px solid #c9c3ba;
-  padding: 0.5em;
-  background-color: #f1f0ee;
-  width: 570px;
-  height: 300px; }
-
-.tabBoxWrapper .hide {
-  display: none; }
-
->>>>>>> 60a3095bf77b3d11f2f6e72992b5449822b76852
 .restaurantScene {
   width: 33%;
   height: 200px;
