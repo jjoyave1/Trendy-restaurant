@@ -1,5 +1,206 @@
+
 @import "styles/vendor/bourbon/bourbon";
 @import "styles/vendor/neat/neat";
 
 
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif; }
 
+$logoFont:'Amatic SC', cursive;
+
+
+*{
+  @include outer-container();
+}
+
+aside{
+  @include span-columns(2);
+  background-color: orange;
+  display: block;
+  height: 1000px;
+  float: left;
+}
+
+.wrapper{
+  @include span-columns(10);
+  height: 100px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: orange;
+  display: inline-block;
+}
+
+.logo {
+  font-family: $logoFont;
+  color: black;
+  // border-top: 1px solid black;
+  margin-top: 33px;
+
+
+  ul {
+    list-style: none;
+    display: inline;
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  .textA {
+  font-size: 3.4em;
+  margin-right: 8px;
+  }
+
+  .textReally {
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textTrendy {
+    font-size: 2.4em;
+    border-top: 1px solid black;
+    margin-right: 8px;
+  }
+
+  .textRestaurant {
+    font-size: 2em;
+    border-top: 1px solid black;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.zocial-twitter {
+  font-size: 30px;
+  border-right: 3px solid black;
+  background-color: lightskyblue;
+  border: 3px solid black;
+  width: 4%;
+  height: 45px;
+  margin-right: 2px; }
+
+.zocial-instagram {
+  font-size: 30px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #663300;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0;
+  height:46px;
+}
+
+
+.zocial-facebook {
+  font-size: 30px;
+  width: 47px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #3b5998;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0; }
+
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px;
+
+}
+
+.tabs{
+  width: 63%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+}
+.picScroll {
+  width: 100%;
+  height: 150px;
+  background-color: gold;
+  margin: 1px;
+
+}
+
+.tabBoxWrapper{
+  width: 63%;
+  height: 450px;
+  background-color: yellow;
+  margin: 1px;
+  display: block;
+  float: left;
+
+  .tabBox {
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  padding: 0 0 0.3em 0;
+  display: block;
+  width: 410px;
+  height: 22px;
+  }
+
+  .tabBox::after{
+    display: none;
+  }
+  .tabBtns {
+    display: inline-block;
+    width: auto;
+    margin: 0.25px;
+  }
+
+  .tabTitle {
+    text-decoration: none;
+    color: #42454a;
+    background-color: #dedbde;
+    border: solid 1px #c9c3ba;
+    border-bottom: none;
+    padding: 0.3em;
+    width:100%;
+  }
+
+  .tabTitle:hover {
+    background-color: #f1f0ee;
+  }
+
+  .selected {
+    color: #000;
+    background-color: #f1f0ee;
+    font-weight: bold;
+    padding: 0.7em 0.3em 0.38em 0.3em;
+  }
+
+  .tabContent {
+    border: 1px solid #c9c3ba;
+    padding: 0.5em;
+    background-color: #f1f0ee;
+    width: 570px;
+    height: 300px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+
+}
+
+.restaurantScene {
+  width: 33%;
+  height: 200px;
+  background-color: yellow;
+  margin: 1px;
+  display: inline-block;
+  float: right;
+}
