@@ -1,3 +1,4 @@
+
 //Pulls appetizers from API
  var appTemplate = _.template($('#app-template').text());
  var entreeTemplate = _.template($('#entree-template').text());
@@ -39,6 +40,7 @@
 
 
 // START OF TAB BOX FUNCTIONS
+
 
 $('.tabTitleMenu').on('click', function(){
   $('#menu-tab').removeClass('hide');
@@ -93,6 +95,7 @@ $('.tabTitleDrinks').on('click', function(){
   $('.tabTitleStory').removeClass('selected');
 
 });
+<<<<<<< HEAD
 
 // END TAB BOX FUNCTIONS
 
@@ -133,3 +136,4 @@ $('.tabTitleSides').on('click', function(){
   $('.tabTitleSides').addClass('sel');
 
 });
+

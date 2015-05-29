@@ -1,5 +1,6 @@
-@import 'vendor/bourbon/bourbon';
-@import 'vendor/neat/neat';
+
+@import "styles/vendor/bourbon/bourbon";
+@import "styles/vendor/neat/neat";
 
 
 @import url(http://weloveiconfonts.com/api/?family=zocial);
@@ -88,6 +89,7 @@ header {
   margin-right: 2px;
 }
 
+
 .zocial-instagram {
   font-size: 30px;
   border: 3px solid black;
@@ -98,6 +100,7 @@ header {
   margin: 0;
   height:46px;
 }
+
 
 .zocial-facebook {
   font-size: 30px;
