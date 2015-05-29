@@ -6,9 +6,14 @@
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 /* zocial */
 [class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif; }
+  font-family: 'zocial', sans-serif;
+}
 
 $logoFont:'Amatic SC', cursive;
+$mediumOrange: #BD5430 ;
+$lightOrange: #FD7140 ;
+$darkOrange: #7F381B ;
+$reallyDarkOrange: #3F1B0E ;
 
 
 *{
