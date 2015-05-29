@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Name</title>
+  <title>The Trendiest of Restaurants</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles/vendor/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/svwp_style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
 
   <div class="container">
 
-  <aside>Sidebar
 
-  <div class="news">News
+
+
+
+
+
+
+
+
+
+
+
+  <aside>Sidebar
+    <div class="news">News
 
        <script type="text/template" id="newsTemplate">
 
@@ -38,11 +51,10 @@
 
 
 
-
-
   </aside>
 
   <div class="wrapper">
+
 
 
 
@@ -57,17 +69,32 @@
       <li class="textRestaurant">Restaurant</li>
 
       <img class="logoImage" src="images/knifeandfork.png">
-      </ul>
 
-    </div><!--this is the end of the logo div-->
-
-
+    <div class="socialicons">
+      <button class="zocial-twitter"></button>
+      <button class="zocial-instagram"></button>
+      <button class="zocial-facebook"></button>
+   </div>
 
 
 
     </header><!-- this is the end of the header div-->
 
-    <div class="picScroll">sidescrolling pic bar</div><!--this is the end of the picScroll div-->
+    <div id="basic" class="svwp">
+
+        <ul class="foodPics">
+
+        </ul>
+
+    </div><!--this is the end of the svwp div-->
+
+
+    <!--Script for the Food Pics from Flickr-->
+    <script type="template" id="foodTemplate">
+      <li>
+        <img src="<%= url_m %>" width="500" height="300">
+      </li>
+    </script>
 
 
 
@@ -96,8 +123,31 @@
       </ul>
 
       <div class="tabContent" id="about">
+
         <div id = "menuBox">
-          <p id="menu-tab">Pepper jack who moved my cheese pecorino. Fondue pecorino say cheese cottage cheese cottage cheese fromage frais cheesy feet macaroni cheese. Manchego pepper jack airedale monterey jack bocconcini ricotta blue castello airedale. Rubber cheese lancashire.</p>
+
+          <div id ="menu-tab">
+
+            <div class="innerTabsWrapper">
+
+              <ul class="menuTabBox">
+                <li class="menuButtons tabTitleApps"><a href="#Apps"  class = "menuTabTitle ">Appetizers</a></li>
+                <li class="menuButtons tabTitleEntrees"><a href="#Entrees" class = "menuTabTitle ">Entrees</a></li>
+                <li class="menuButtons tabTitleSides"><a href="#Sides" class = "menuTabTitle ">Sides</a></li>
+              </ul>
+
+              <div class="menuContent">
+                <div id = "menuBox">
+                  <div id="apps-tab"> </div>
+                  <div id ="entrees-tab" class = "menuHide"></div>
+                  <div id="sides-tab" class = "menuHide"></div>
+                </div> <!-- END MENUBOX -->
+              </div> <!-- END MENUCONTENT -->
+
+              </div> <!-- END INNER WRAPPER -->
+
+          </div> <!-- END MENU-TAB ID -->
+
           <p id ="story-tab" class = "hide">Ricotta rubber cheese cheeseburger. Hard cheese jarlsberg blue castello halloumi caerphilly hard cheese blue castello brie. Gouda ricotta monterey jack cut the cheese st. agur blue cheese cheesy feet smelly cheese cottage cheese. Monterey jack.</p>
           <p id="history-tab" class = "hide">Ricotta edam paneer. Bavarian bergkase fromage cheese on toast pecorino cut the cheese smelly cheese danish fontina blue castello. Camembert de normandie when the cheese comes out everybody's happy everyone loves port-salut cream cheese cheesecake stinking bishop cheese strings. St. agur blue cheese jarlsberg parmesan parmesan.</p>
           <p id="drinks-tab" class = "hide">Blue castello stinking bishop croque monsieur. Hard cheese cheese strings cheese and wine who moved my cheese babybel manchego hard cheese emmental. Queso monterey jack stinking bishop mascarpone cheddar smelly cheese airedale the big cheese. Cheeseburger croque monsieur manchego stilton hard cheese cheese and biscuits mascarpone cheesy feet. Port-salut cheddar swiss bavarian bergkase.</p>
@@ -115,37 +165,45 @@
 
 
 
-
-
-
-
-
-
-
-
-
   </div><!--this is the end of the wrapper div-->
-
-
-
 
 
   </div><!--this is the end of the container div-->
 
+
+
+
+<!-- SCRIPT FOR APPETIZERS -->
+  <script type="template" id="app-template">
+       <div>
+         <span><%= item %></span>
+         <span><%= price %></span>
+         <p><%= description %></p>
+       </div>
+  </script><!-- END APP SCRIPT -->
+
+<!-- SCRIPT FOR ENTREES -->
+    <script type="template" id="entree-template">
+       <div>
+         <span><%= item %></span>
+         <span><%= price %></span>
+         <p><%= description %></p>
+       </div>
+  </script><!-- END ENTREE SCRIPT -->
+
+<!-- SCRIPT FOR SIDES -->
+    <script type="template" id="side-template">
+       <div>
+         <span><%= item %></span>
+         <span><%= price %></span>
+         <p><%= description %></p>
+       </div>
+  </script><!-- END SIDE SCRIPT -->
+
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
+  <script src="scripts/vendor/slideViewerPro.1.0.js"></script>
   <script src="scripts/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
