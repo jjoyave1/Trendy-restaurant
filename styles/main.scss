@@ -22,6 +22,23 @@ aside{
   float: left;
 }
 
+.news{
+  background-color: beige;
+  height: 135px;
+  width: 160px;
+    margin-bottom: 15px;
+
+}
+.special{
+  background-color: beige;
+  height: 135px;
+  width: 160px;
+}
+.gmap{
+  width: 100%;
+  }
+
+
 .wrapper{
   @include span-columns(10);
   height: 100px;

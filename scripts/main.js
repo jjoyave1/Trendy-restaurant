@@ -131,6 +131,39 @@ $('.tabTitleDrinks').on('click', function(){
 
 // END TAB BOX FUNCTIONS
 
+
+// START  News & Special
+var newsTemplate = _.template($('#newsTemplate').text());
+
+$.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/news/latest", function(blog){
+  processNews(blog);
+});
+function processNews(news){
+  var $element = newsTemplate(news);
+  $('.news').append($element);
+};
+
+// $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu/special",
+//   function(items){});
+
+var dailySpecial;
+
+$.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu/special"
+, function(spec){
+  dailySpecial = spec.menu_item_id;
+});
+
+$.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu-1",
+  function(spec){
+  spec.entrees.forEach(function(entree){
+    console.log(dailySpecial)
+    if (entree.id == dailySpecial) {
+      $('.special').html('<h3>Our Daily Special</h3><br/><br/>' + '<p>'+ entree.item + '</p><br/><br/>' + '<p>' + entree.price + '</p><br/>' + '<p>' + entree.description + '</p>')
+    }
+  });
+});
+
+
 // MENU TAB BOX FUNCTIONS
 
 $('.tabTitleApps').on('click', function(){
@@ -168,4 +201,3 @@ $('.tabTitleSides').on('click', function(){
   $('.tabTitleSides').addClass('sel');
 
 });
-
