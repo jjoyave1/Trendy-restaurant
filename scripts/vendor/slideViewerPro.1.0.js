@@ -28,7 +28,7 @@ jQuery(function(){
 var j = 0;
 jQuery.fn.slideViewerPro = function(settings) {
     settings = jQuery.extend({
-      galBorderWidth: 6,
+      galBorderWidth: 2,
       thumbsTopMargin: 3,
       thumbsRightMargin: 3,
       thumbsBorderWidth: 3,
