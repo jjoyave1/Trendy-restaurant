@@ -1,3 +1,35 @@
+//FLICKR PICS AND IMAGE VIEWER
+var foodpicsTemplate = _.template($('#foodTemplate').text());
+var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
+var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=5704-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
+
+
+$.ajax(url, {
+  dataType: 'jsonp',
+  jsonpCallback: 'jsonFlickrApi',
+  success: function(data) {
+    var photos = data.photos.photo;
+    processFlickr(photos);
+  }
+})
+
+function processFlickr(pics) {
+
+  pics.forEach(function(pic) {
+    var $element = foodpicsTemplate(pic);
+    $('.foodPics').append($element);
+  });
+};
+
+$(window).bind("load", function() {
+  $("div#basic").slideViewerPro();
+});
+
+
+
+
+
+
 
 //Pulls appetizers from API
  var appTemplate = _.template($('#app-template').text());
@@ -98,6 +130,39 @@ $('.tabTitleDrinks').on('click', function(){
 
 // END TAB BOX FUNCTIONS
 
+
+// START  News & Special
+var newsTemplate = _.template($('#newsTemplate').text());
+
+$.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/news/latest", function(blog){
+  processNews(blog);
+});
+function processNews(news){
+  var $element = newsTemplate(news);
+  $('.news').append($element);
+};
+
+// $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu/special",
+//   function(items){});
+
+var dailySpecial;
+
+$.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu/special"
+, function(spec){
+  dailySpecial = spec.menu_item_id;
+});
+
+$.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu-1",
+  function(spec){
+  spec.entrees.forEach(function(entree){
+    console.log(dailySpecial)
+    if (entree.id == dailySpecial) {
+      $('.special').html('<h3>Our Daily Special</h3>' + '<p>'+ entree.item  + '<p>' +'Price $' + entree.price + '<p>' + entree.description + '</p>')
+    }
+  });
+});
+
+
 // MENU TAB BOX FUNCTIONS
 
 $('.tabTitleApps').on('click', function(){
@@ -135,4 +200,3 @@ $('.tabTitleSides').on('click', function(){
   $('.tabTitleSides').addClass('sel');
 
 });
-

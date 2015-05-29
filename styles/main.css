@@ -21,24 +21,50 @@ html {
   content: "";
   display: inline-block; }
 
+body {
+  background-color: #7F381B; }
+
 aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
-  background-color: orange;
+  width: 23.23176%;
+  background-color: #FD7140;
   display: block;
   height: 1000px;
-  float: left; }
+  border: 1px solid black;
+  border-radius: 5px;
+  float: left;
+  width: 175px; }
 
 aside:last-child {
   margin-right: 0; }
+
+.news {
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px; }
+
+.special {
+  background-color: beige;
+  font-size: 12px; }
+
+.gmap {
+  width: 100%;
+  background-color: lightgrey; }
+
+.locinfo {
+  font-size: 10px; }
+
+.locph {
+  font-size: 10px; }
 
 .wrapper {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%;
+  width: 74.41059%;
   height: 100px; }
 
 .wrapper:last-child {
@@ -46,8 +72,10 @@ aside:last-child {
 
 header {
   width: 100%;
-  height: 120px;
-  background-color: orange;
+  height: 162px;
+  background-color: #BD5430;
+  border: 1px solid black;
+  border-radius: 5px;
   display: inline-block; }
 
 .logo {
@@ -113,30 +141,18 @@ header {
   padding-left: 3px;
   margin: 0; }
 
-.picScroll {
-  width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px; }
-
 .tabs {
   width: 63%;
   height: 200px;
-  background-color: yellow;
+  background-color: #FD7140;
   margin: 1px;
   display: inline-block;
   float: left; }
 
-.picScroll {
-  width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px; }
-
 .tabBoxWrapper {
-  width: 63%;
-  height: 450px;
-  background-color: yellow;
+  width: 100%;
+  height: 600px;
+  background-color: #3F1B0E;
   margin: 1px;
   display: block;
   float: left; }
@@ -146,7 +162,7 @@ header {
   margin: 30px 0 0 0;
   padding: 0 0 0.3em 0;
   display: block;
-  width: 410px;
+  width: 100%;
   height: 22px; }
 
 .tabBoxWrapper .tabBox::after {
@@ -160,27 +176,28 @@ header {
 .tabBoxWrapper .tabTitle {
   text-decoration: none;
   color: #42454a;
-  background-color: #dedbde;
-  border: solid 1px #c9c3ba;
+  background-color: #FD7140;
+  border: solid 1px black;
   border-bottom: none;
   padding: 0.3em;
   width: 100%; }
 
 .tabBoxWrapper .tabTitle:hover {
-  background-color: #f1f0ee; }
+  background-color: #7F381B; }
 
 .tabBoxWrapper .selected {
-  color: #000;
-  background-color: #f1f0ee;
+  color: black;
+  background-color: #FD7140;
   font-weight: bold;
   padding: 0.7em 0.3em 0.38em 0.3em; }
 
 .tabBoxWrapper .tabContent {
-  border: 1px solid #c9c3ba;
+  border: 1px solid black;
   padding: 0.5em;
-  background-color: #f1f0ee;
-  width: 570px;
-  height: 500px; }
+  background-color: #FD7140;
+  width: 100%;
+  height: 500px;
+  margin-left: 10px; }
 
 .tabBoxWrapper .hide {
   display: none; }
@@ -202,16 +219,16 @@ header {
 .menuButtons {
   display: block;
   margin: 3px 0 3px 0;
-  background-color: #39889D;
+  background-color: #BD5430;
   padding: 4px 0 3px 0;
-  border-left: solid 1px blue;
-  border-top: solid 1px blue;
-  border-bottom: solid 1px blue;
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
 
 .menuButtons:hover {
-  background-color: lightblue; }
+  background-color: #3F1B0E; }
 
 .menuTabTitle {
   color: #E1E3DF;
@@ -221,7 +238,7 @@ header {
   display: block; }
 
 .sel {
-  background-color: lightblue;
+  background-color: #BD5430;
   padding: 4px 0 5px 2px;
   font-weight: bold; }
 
@@ -231,17 +248,9 @@ header {
   float: middle;
   width: 400px;
   height: 500px;
-  background-color: lightblue;
+  background-color: #BD5430;
   margin-top: 3px;
-  border-top: solid 1px blue; }
+  border-top: solid 1px black; }
 
 .menuHide {
   display: none; }
-
-.restaurantScene {
-  width: 33%;
-  height: 200px;
-  background-color: yellow;
-  margin: 1px;
-  display: inline-block;
-  float: right; }
