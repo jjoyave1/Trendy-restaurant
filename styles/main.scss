@@ -32,26 +32,40 @@ aside{
   border: 1px solid black;
   border-radius: 5px;
   float: left;
+
   font-family: $logoFont;
   font-size: 1.2em;
+
+  width: 175px;
+
 }
 
 .news{
-  background-color: $tan;
-  height: 135px;
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
   width: 160px;
-  margin-bottom: 15px;
+
 
 }
 .special{
-  background-color: $tan;
-  height: 135px;
-  width: 160px;
+  background-color: beige;
+  // height: 156px;
+  // width: 160px;
+  font-size: 12px;
 }
+
 .gmap{
   width: 100%;
-  }
+  background-color: lightgrey;
 
+  }
+.locinfo{
+  font-size: 10px;
+}
+.locph{
+  font-size: 10px;
+}
 
 .wrapper{
   @include span-columns(9);

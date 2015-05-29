@@ -32,11 +32,29 @@ aside {
   background-color: #FD7140;
   display: block;
   height: 1000px;
+
   border: 1px solid black;
   border-radius: 5px;
   float: left;
   font-family: "Amatic SC", cursive;
   font-size: 1.2em; }
+
+
+  float: left;
+  width: 175px; }
+  aside:last-child {
+    margin-right: 0; }
+
+.news {
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px; }
+
+.special {
+  background-color: beige;
+  font-size: 12px; }
+
 
 aside:last-child {
   margin-right: 0; }
@@ -53,7 +71,14 @@ aside:last-child {
   width: 160px; }
 
 .gmap {
-  width: 100%; }
+  width: 100%;
+  background-color: lightgrey; }
+
+.locinfo {
+  font-size: 10px; }
+
+.locph {
+  font-size: 10px; }
 
 .wrapper {
   float: left;
