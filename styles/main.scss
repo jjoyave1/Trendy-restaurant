@@ -15,17 +15,26 @@ aside{
   @include span-columns(2);
   background-color: orange;
   display: block;
-  height: 1000px;
+  // height: 1000px;
   float: left;
-}
 
+}
+.news{
+  background-color: beige;
+  height: 135px;
+  width: 160px;
+    margin-bottom: 15px;
+
+}
+.special{
+  background-color: beige;
+  height: 135px;
+  width: 160px;
+}
 .gmap{
-  background-color: grey;
-  width: 30%;
-  height: 360px;
-  right: 50px;
+  width: 100%;
+  }
 
-}
 
 .wrapper{
   @include span-columns(10);
