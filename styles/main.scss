@@ -1,4 +1,3 @@
-
 @import "styles/vendor/bourbon/bourbon";
 @import "styles/vendor/neat/neat";
 
@@ -6,37 +5,74 @@
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 /* zocial */
 [class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
+  font-family: 'zocial', sans-serif; }
 
 $logoFont:'Amatic SC', cursive;
 $mediumOrange: #BD5430 ;
 $lightOrange: #FD7140 ;
 $darkOrange: #7F381B ;
 $reallyDarkOrange: #3F1B0E ;
+$tan: #E7D0AB;
 
 
 *{
   @include outer-container();
 }
 
+body {
+  background-color: $darkOrange;
+}
+
+
 aside{
-  @include span-columns(2);
-  background-color: orange;
+  @include span-columns(3);
+  background-color: $lightOrange;
   display: block;
   height: 1000px;
+  border: 1px solid black;
+  border-radius: 5px;
   float: left;
+  width: 175px;
+}
+
+.news{
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px;
+
+
+}
+.special{
+  background-color: beige;
+  // height: 156px;
+  // width: 160px;
+  font-size: 12px;
+}
+
+.gmap{
+  width: 100%;
+  background-color: lightgrey;
+
+  }
+.locinfo{
+  font-size: 10px;
+}
+.locph{
+  font-size: 10px;
 }
 
 .wrapper{
-  @include span-columns(10);
+  @include span-columns(9);
   height: 100px;
 }
 
 header {
   width: 100%;
-  height: 120px;
-  background-color: orange;
+  height: 162px;
+  background-color: $mediumOrange;
+  border: 1px solid black;
+  border-radius: 5px;
   display: inline-block;
 }
 
@@ -118,37 +154,25 @@ header {
   margin: 0;
 }
 
-.picScroll {
-  width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px;
 
-}
 
 .tabs{
   width: 63%;
   height: 200px;
-  background-color: yellow;
+  background-color: $lightOrange;
   margin: 1px;
   display: inline-block;
   float: left;
 }
 
-.picScroll {
-  width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px;
 
-}
 
 
 // outer tabs style
 .tabBoxWrapper{
-  width: 63%;
-  height: 450px;
-  background-color: yellow;
+  width: 100%;
+  height: 600px;
+  background-color: $reallyDarkOrange;
   margin: 1px;
   display: block;
   float: left;
@@ -158,7 +182,7 @@ header {
   margin: 30px 0 0 0;
   padding: 0 0 0.3em 0;
   display: block;
-  width: 410px;
+  width: 100%;
   height: 22px;
   }
 
@@ -174,30 +198,31 @@ header {
   .tabTitle {
     text-decoration: none;
     color: #42454a;
-    background-color: #dedbde;
-    border: solid 1px #c9c3ba;
+    background-color: $lightOrange;
+    border: solid 1px black;
     border-bottom: none;
     padding: 0.3em;
     width:100%;
   }
 
   .tabTitle:hover {
-    background-color: #f1f0ee;
+    background-color: $darkOrange;
   }
 
   .selected {
-    color: #000;
-    background-color: #f1f0ee;
+    color: black;
+    background-color: $lightOrange;
     font-weight: bold;
     padding: 0.7em 0.3em 0.38em 0.3em;
   }
 
   .tabContent {
-    border: 1px solid #c9c3ba;
+    border: 1px solid black;
     padding: 0.5em;
-    background-color: #f1f0ee;
-    width: 570px;
+    background-color: $lightOrange;
+    width: 100%;
     height: 500px;
+    margin-left: 10px;
   }
 
   .hide {
@@ -226,17 +251,17 @@ header {
 .menuButtons{
   display: block;
   margin: 3px 0 3px 0;
-  background-color: #39889D;
+  background-color: $mediumOrange;
   padding: 4px 0 3px 0;
-  border-left: solid 1px blue;
-  border-top: solid 1px blue;
-  border-bottom: solid 1px blue;
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
 .menuButtons:hover{
-  background-color: lightblue;
+  background-color: $reallyDarkOrange;
 }
 
 .menuTabTitle{
@@ -248,7 +273,7 @@ header {
 }
 
 .sel {
-  background-color: lightblue;
+  background-color: $mediumOrange;
   padding: 4px 0 5px 2px;
   font-weight: bold;
 }
@@ -259,22 +284,12 @@ header {
   float: middle;
   width: 400px;
   height: 500px;
-  background-color: lightblue;
+  background-color: $mediumOrange;
   margin-top: 3px;
-  border-top: solid 1px blue;
+  border-top: solid 1px black;
 }
 
 .menuHide{
   display: none;
 }
 // end inner tabs style
-
-
-.restaurantScene {
-  width: 33%;
-  height: 200px;
-  background-color: yellow;
-  margin: 1px;
-  display: inline-block;
-  float: right;
-}
