@@ -28,23 +28,30 @@ aside {
   background-color: orange;
   display: block;
   height: 1000px;
-  float: left; }
+  float: left;
+  width: 175px; }
   aside:last-child {
     margin-right: 0; }
 
 .news {
-  background-color: beige;
-  height: 135px;
-  width: 160px;
-  margin-bottom: 15px; }
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px; }
 
 .special {
   background-color: beige;
-  height: 135px;
-  width: 160px; }
+  font-size: 12px; }
 
 .gmap {
-  width: 100%; }
+  width: 100%;
+  background-color: lightgrey; }
+
+.locinfo {
+  font-size: 10px; }
+
+.locph {
+  font-size: 10px; }
 
 .wrapper {
   float: left;

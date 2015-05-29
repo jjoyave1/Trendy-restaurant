@@ -158,7 +158,7 @@ $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu-1",
   spec.entrees.forEach(function(entree){
     console.log(dailySpecial)
     if (entree.id == dailySpecial) {
-      $('.special').html('<h3>Our Daily Special</h3><br/><br/>' + '<p>'+ entree.item + '</p><br/><br/>' + '<p>' + entree.price + '</p><br/>' + '<p>' + entree.description + '</p>')
+      $('.special').html('<h3>Our Daily Special</h3>' + '<p>'+ entree.item  + '<p>' +'Price $' + entree.price + '<p>' + entree.description + '</p>')
     }
   });
 });
