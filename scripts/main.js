@@ -95,7 +95,6 @@ $('.tabTitleDrinks').on('click', function(){
   $('.tabTitleStory').removeClass('selected');
 
 });
-<<<<<<< HEAD
 
 // END TAB BOX FUNCTIONS
 
