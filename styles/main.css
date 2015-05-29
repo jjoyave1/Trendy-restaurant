@@ -1,3 +1,4 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 html {
   box-sizing: border-box; }
 
@@ -5,6 +6,10 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif; }
 
 * {
   max-width: 68em;
@@ -79,6 +84,35 @@ header {
   width: 40px;
   height: 40px; }
 
+.zocial-twitter {
+  font-size: 30px;
+  border-right: 3px solid black;
+  background-color: lightskyblue;
+  border: 3px solid black;
+  width: 4%;
+  height: 45px;
+  margin-right: 2px; }
+
+.zocial-instagram {
+  font-size: 30px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #663300;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0;
+  height: 46px; }
+
+.zocial-facebook {
+  font-size: 30px;
+  width: 47px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #3b5998;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0; }
+
 .picScroll {
   width: 100%;
   height: 150px;
@@ -146,9 +180,62 @@ header {
   padding: 0.5em;
   background-color: #f1f0ee;
   width: 570px;
-  height: 300px; }
+  height: 500px; }
 
 .tabBoxWrapper .hide {
+  display: none; }
+
+.innerTabsWrapper {
+  width: 570px;
+  height: 500px; }
+
+.menuTabBox {
+  display: block;
+  margin-top: 0;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  width: 135px;
+  height: auto;
+  float: left; }
+
+.menuButtons {
+  display: block;
+  margin: 3px 0 3px 0;
+  background-color: #39889D;
+  padding: 4px 0 3px 0;
+  border-left: solid 1px blue;
+  border-top: solid 1px blue;
+  border-bottom: solid 1px blue;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.menuButtons:hover {
+  background-color: lightblue; }
+
+.menuTabTitle {
+  color: #E1E3DF;
+  text-decoration: none;
+  width: 115px;
+  height: 30px;
+  display: block; }
+
+.sel {
+  background-color: lightblue;
+  padding: 4px 0 5px 2px;
+  font-weight: bold; }
+
+.menuContent {
+  display: inline-block;
+  clear: both;
+  float: middle;
+  width: 400px;
+  height: 500px;
+  background-color: lightblue;
+  margin-top: 3px;
+  border-top: solid 1px blue; }
+
+.menuHide {
   display: none; }
 
 .restaurantScene {
