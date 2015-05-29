@@ -20,7 +20,7 @@ $tan: #E7D0AB;
 }
 
 body {
-  background-color: $darkOrange;
+  background-color: white;
 }
 
 
@@ -32,6 +32,8 @@ aside{
   border: 1px solid black;
   border-radius: 5px;
   float: left;
+  font-family: $logoFont;
+  font-size: 1.2em;
 }
 
 .news{
@@ -54,6 +56,8 @@ aside{
 .wrapper{
   @include span-columns(9);
   height: 100px;
+  font-family: $logoFont;
+  font-size: 1.5em;
 }
 
 header {
@@ -63,7 +67,11 @@ header {
   border: 1px solid black;
   border-radius: 5px;
   display: inline-block;
+  margin-bottom: 38px;
 }
+
+
+
 
 .logo {
   font-family: $logoFont;
@@ -108,52 +116,6 @@ header {
     height: 40px;
   }
 }
-
-.zocial-twitter {
-  font-size: 30px;
-  border-right: 3px solid black;
-  background-color: lightskyblue;
-  border: 3px solid black;
-  width: 4%;
-  height: 45px;
-  margin-right: 2px;
-}
-
-
-.zocial-instagram {
-  font-size: 30px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #663300;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-  height:46px;
-}
-
-
-.zocial-facebook {
-  font-size: 30px;
-  width: 47px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #3b5998;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-}
-
-
-
-.tabs{
-  width: 63%;
-  height: 200px;
-  background-color: $lightOrange;
-  margin: 1px;
-  display: inline-block;
-  float: left;
-}
-
 
 
 
@@ -285,3 +247,36 @@ header {
 
 
 
+.zocial-twitter {
+  font-size: 30px;
+  border-right: 3px solid black;
+  background-color: lightskyblue;
+  border: 3px solid black;
+  width: 4%;
+  height: 45px;
+  margin-right: 2px;
+}
+
+
+.zocial-instagram {
+  font-size: 30px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #663300;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0;
+  height:46px;
+}
+
+
+.zocial-facebook {
+  font-size: 30px;
+  width: 47px;
+  border: 3px solid black;
+  margin-top: 2px;
+  background-color: #3b5998;
+  padding-right: 4px;
+  padding-left: 3px;
+  margin: 0;
+}
