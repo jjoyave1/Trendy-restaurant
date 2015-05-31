@@ -5,10 +5,11 @@
 
 
 $logoFont:'Amatic SC', cursive;
-$medium: #FEC5A7;
-$light: #FFCCB3;
-$dark: #E7B399;
+$medium: #D5D1CE;
+$light: #E7E2DE;
+$dark: #CBC5BD;
 $tan: #E7D0AB;
+$fontColor: #3B4654;
 
 
 *{
@@ -17,6 +18,7 @@ $tan: #E7D0AB;
 
 body {
   background-color: $medium;
+  color: $fontColor;
 }
 
 
@@ -129,18 +131,55 @@ header {
   }
 }
 
+
 .socialMedia ul {
   list-style: none;
   float: right;
   margin-right: 10px;
   margin-top: 10px;
-
-}
+  height: 300px;
+  }
 
 .facebook li {
   margin-right: 10px;
   padding: 0;
+  }
+
+
+ .socialMedia span {
+ opacity: 0;
+ display: inline-block;
+ height: 10px;
+  }
+
+.socialMedia .box {
+  position: relative;
+  // overflow: hidden;
+  height: 50px;
+  }
+
+.socialMedia li {
+  height: 40px;
+
+  }
+
+.socialMedia #image {
+  position: absolute;
+  transition: position 2s ease;
+  }
+
+.socialMedia .box:hover #image {
+  position: absolute;
+  transition: position 2s ease;
+  right: 0;
 }
+
+.socialMedia .box:hover span {
+  opacity: 1;
+}
+
+
+
 
 
 

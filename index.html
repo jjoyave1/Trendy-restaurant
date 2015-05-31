@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/svwp_style.css" type="text/css" media="screen" />
+
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -72,11 +72,13 @@
 
     </div><!--this is the end of the logo div -->
 
-    <div class="socialMedia">
+   <div class="socialMedia">
       <ul>
-        <li class="instagram"><img src="images/instagram-icon.png" width="40" height="40"></li>
-        <li class="facebook"><img src="images/facebook-icon.png" width="33" height="33"></li>
-        <li class="twitter"><img src="images/twitter-icon.png" width="40" height="40"></li>
+        <div class="box"><span>Instagram</span><li class="instagram"><img id="image" src="images/instagram-icon.png" width="40" height="40"></li></div>
+
+        <div class="box"><span>Facebook</span><li class="facebook"><img id="image" src="images/facebook-icon.png" width="35" height="35"></li></div>
+
+        <div class="box"><span>Twitter</span><li class="twitter"><img id="image" src="images/twitter-icon.png" width="40" height="40"></li></div>
 
       </ul>
 
@@ -86,13 +88,14 @@
 
     </header>
     <!-- this is the end of the header div-->
-    <div id="basic" class="svwp">
+    <div class="flickrPics">
+
 
         <ul class="foodPics">
 
         </ul>
 
-    </div><!--this is the end of the svwp div-->
+    </div><!--this is the end of the flickrPics div-->
 
 
     <!--Script for the Food Pics from Flickr-->
@@ -178,7 +181,7 @@
 
   </div><!--this is the end of the container div-->
 
-
+<script src="scripts/vendor/view.min.js"></script>
 
 
 <!-- SCRIPT FOR APPETIZERS -->
@@ -210,7 +213,7 @@
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
-  <script src="scripts/vendor/slideViewerPro.1.0.js"></script>
+
   <script src="scripts/main.js"></script>
 
 </body>
