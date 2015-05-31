@@ -9,13 +9,12 @@ $.ajax(url, {
   jsonpCallback: 'jsonFlickrApi',
   success: function(data) {
     var photos = data.photos.photo;
+    console.log(photos);
     processFlickr(photos);
   }
 })
-  console.log('hello');
 
 function processFlickr(pics) {
-
   pics.forEach(function(pic) {
     var $element = foodpicsTemplate(pic);
     $('.foodPics').append($element);
