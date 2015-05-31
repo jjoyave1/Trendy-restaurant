@@ -25,60 +25,69 @@ body {
   background-color: #7F381B; }
 
 aside {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
   background-color: #FD7140;
   display: block;
   height: 1000px;
-
+  border: 1px solid black;
+  border-radius: 5px;
   float: left;
-  width: 175px; }
-  aside:last-child {
-    margin-right: 0; }
-
-.news {
-  background-color: grey;
-  font-size: 12px;
-  height: 156px;
-  width: 160px; }
-
-.special {
-  background-color: beige;
-  font-size: 12px; }
-
+  font-family: "Amatic SC", cursive;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
 
 aside:last-child {
   margin-right: 0; }
 
+h3 {
+  padding-left: 5px;
+  font-size: 30px; }
+
+.sidebar {
+  font-size: 37px;
+  text-align: center; }
+
 .news {
-  background-color: #E7D0AB;
-  height: 135px;
-  width: 160px;
-  margin-bottom: 15px; }
+  height: 240px;
+  width: 175px;
+  font-size: 20px; }
+
+.aline {
+  width: 90%;
+  height: 1px;
+  background: #CBCBCB;
+  margin-left: 12px;
+  margin-top: 4px;
+  margin-bottom: -21px; }
 
 .special {
-  background-color: #E7D0AB;
-  height: 135px;
-  width: 160px; }
+  height: 283px;
+  width: 251px;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 5px; }
 
 .gmap {
-  width: 100%;
-  background-color: lightgrey; }
+  width: 100%; }
 
 .locinfo {
-  font-size: 10px; }
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold; }
 
 .locph {
-  font-size: 10px; }
+  font-size: 20px;
+  margin-left: 4px;
+  text-align: center;
+  font-weight: bold; }
 
 .wrapper {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%;
-  height: 100px; }
+  height: auto; }
 
 .wrapper:last-child {
   margin-right: 0; }
