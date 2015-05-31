@@ -32,56 +32,77 @@ function processFlickr(pics) {
 
 
 //Pulls appetizers from API
- var appTemplate = _.template($('#app-template').text());
- var entreeTemplate = _.template($('#entree-template').text());
- var sideTemplate = _.template($('#side-template').text());
+var appTemplate = _.template($('#app-template').text());
+var entreeTemplate = _.template($('#entree-template').text());
+var sideTemplate = _.template($('#side-template').text());
 
 
- $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
-   processApps(items.appetizers);
-   });
+$.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
+  processApps(items.appetizers);
+  });
 
- function processApps(items) {
-   items.forEach(function(app){
-     var $element = appTemplate(app);
-     $('#apps-tab').append($element);
-   });
- }
+function processApps(items) {
+  items.forEach(function(app) {
+    var $element = appTemplate(app);
+    $('#apps-tab').append($element);
+    if (app.allergies == 1 || app.favorite == 1 || app.spicy == 1 || app.vegan == 1){
+      $('#apps-tab').append("<div class='alertWrapApps alertBoxWrap'></div>")
+    }
+    if (app.allergies == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
+    else if (app.favorite == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
+    else if (app.spicy == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
+    else if (app.vegan == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  });
+};
 
-  $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
-   processEntrees(items.entrees);
-   });
+$.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
+  processEntrees(items.entrees);
+});
 
- function processEntrees(items) {
-   items.forEach(function(entree){
-     var $element = entreeTemplate(entree);
-     $('#entrees-tab').append($element);
-   });
- }
+function processEntrees(items) {
+  items.forEach(function(entree) {
+    var $element = entreeTemplate(entree);
+    $('#entrees-tab').append($element);
+    if (entree.allergies == 1 || entree.favorite == 1 || entree.spicy == 1 || entree.vegan == 1){
+      $('#entrees-tab').append("<div class='alertWrapEntrees alertBoxWrap'></div>")
+    }
+    if (entree.allergies == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
+    else if (entree.favorite == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
+    else if (entree.spicy == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
+    else if (entree.vegan == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  });
+};
 
-  $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
+$.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
    processSides(items.sides);
    });
 
- function processSides(items) {
-   items.forEach(function(side){
-     var $element = sideTemplate(side);
-     $('#sides-tab').append($element);
-   });
- }
+function processSides(items) {
+  items.forEach(function(side){
+  var $element = sideTemplate(side);
+  $('#sides-tab').append($element);
 
+  if (side.allergies == 1 || side.favorite == 1 || side.spicy == 1 || side.vegan == 1) {
+  $('#sides-tab').append("<div class='alertWrapSides alertBoxWrap'></div>")
+  }
+  if (side.allergies == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
+  else if (side.favorite == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
+  else if (side.spicy == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
+  else if (side.vegan == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  });
+};
 
 // START OF TAB BOX FUNCTIONS
 
 
 $('.tabTitleMenu').on('click', function(){
   $('#menu-tab').removeClass('hide');
-  $('#history-tab').addClass('hide');
+  $('#reservations-tab').addClass('hide');
   $('#drinks-tab').addClass('hide');
   $('#story-tab').addClass('hide');
 
   $('.tabTitleMenu').addClass('selected');
-  $('.tabTitleHistory').removeClass('selected');
+  $('.tabTitleReservations').removeClass('selected');
   $('.tabTitleDrinks').removeClass('selected');
   $('.tabTitleStory').removeClass('selected');
 });
@@ -89,26 +110,26 @@ $('.tabTitleMenu').on('click', function(){
 $('.tabTitleStory').on('click', function(){
 
   $('#menu-tab').addClass('hide');
-  $('#history-tab').addClass('hide');
+  $('#reservations-tab').addClass('hide');
   $('#drinks-tab').addClass('hide');
   $('#story-tab').removeClass('hide');
 
   $('.tabTitleMenu').removeClass('selected');
-  $('.tabTitleHistory').removeClass('selected');
+  $('.tabTitleReservations').removeClass('selected');
   $('.tabTitleDrinks').removeClass('selected');
   $('.tabTitleStory').addClass('selected');
 
 });
 
-$('.tabTitleHistory').on('click', function(){
+$('.tabTitleReservations').on('click', function(){
 
-  $('#history-tab').removeClass('hide');
+  $('#reservations-tab').removeClass('hide');
   $('#menu-tab').addClass('hide');
   $('#drinks-tab').addClass('hide');
   $('#story-tab').addClass('hide');
 
   $('.tabTitleMenu').removeClass('selected');
-  $('.tabTitleHistory').addClass('selected');
+  $('.tabTitleReservations').addClass('selected');
   $('.tabTitleDrinks').removeClass('selected');
   $('.tabTitleStory').removeClass('selected');
 
@@ -116,7 +137,7 @@ $('.tabTitleHistory').on('click', function(){
 
 $('.tabTitleDrinks').on('click', function(){
 
-  $('#history-tab').addClass('hide');
+  $('#reservations-tab').addClass('hide');
   $('#menu-tab').addClass('hide');
   $('#story-tab').addClass('hide');
   $('#drinks-tab').removeClass('hide');

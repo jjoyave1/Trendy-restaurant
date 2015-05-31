@@ -177,7 +177,7 @@ header {
 
   .tabBox {
   list-style-type: none;
-  margin: 30px 10px 0 10px;
+  margin: 30px 10px 0 9px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
@@ -230,7 +230,6 @@ header {
 //
 //
 // end outer tabs
-
 
 
 // inner (menu) tabs style
@@ -299,10 +298,17 @@ header {
   display: none;
 }
 
+#reservations-tab {
+  width: 772px;
+  height: auto;
+  margin: 16px 0 16px 0;
+}
+
 
 .alertBoxWrap{
-  display:block;
+  display: block;
   margin-top: 0;
+  float: right;
   width: 640px;
   height: 30px;
 
@@ -317,10 +323,15 @@ header {
   border-radius: 3px;
   border: solid 1px $darkOrange;
   position: relative;
+  display: inline-block;
 }
 
 .alertBox:hover {
   border: solid 1px $reallyDarkOrange;
+}
+
+.alertbox:hover .popBox {
+  opacity: 1;
 }
 
 .veganIconImg{
@@ -354,19 +365,58 @@ header {
   margin: 25px 0 0 0;
   border: solid 1px #39889D;
   border-radius: 3px;
+  opacity: 0.5;
 }
 
-.dimmedAlertBox {
-  opacity: 0.2;
+//styling reservations tab
+.resHead{
+  font-family: $logoFont;
 }
-.appz{ //styling within apps script
+.resName{
+  width: 250px;
+  height: 22px;
+}
+
+.resGuests{
+  width: 250px;
+  height: 22px;
+}
+.resDate{
+  width: 250px;
+  height: 22px;
+}
+.resBox{
+  width:16%;
+  height:40px;
+  background-color: $darkOrange;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+  display: block;
+}
+input[type = button]{
+  width:15em;
+  background-color: $reallyDarkOrange;
+  color:white;
+  display:block;
+  margin-top:4%;
+  font-family: $logoFont;
+  font-size: 1.4em;
+}
+
+//end res tab
+
+//styling within apps script
+.appz {
   width: 640px;
-  height: 122px;
+  height: 142px;
 }
+
 .entreez {
   width: 640px;
-  height: 65px;
+  height: 100px;
 }
+
 .sidez {
   width: 640px;
   height: 10px;
@@ -376,11 +426,10 @@ header {
   font-family: $logoFont;
   font-size: 1.5em;
 }
+
 .menu-desc {
   margin: 0;
   font-family: $logoFont;
   font-size: 1.5em;
 }
-
-
 // end inner tabs style
