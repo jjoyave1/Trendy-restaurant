@@ -4,14 +4,14 @@ var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
 var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=5704-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
 
 
-$.ajax(url, {
-  dataType: 'jsonp',
-  jsonpCallback: 'jsonFlickrApi',
-  success: function(data) {
-    var photos = data.photos.photo;
-    processFlickr(photos);
-  }
-})
+// $.ajax(url, {
+//   dataType: 'jsonp',
+//   jsonpCallback: 'jsonFlickrApi',
+//   success: function(data) {
+//     var photos = data.photos.photo;
+//     processFlickr(photos);
+//   }
+// })
 
 function processFlickr(pics) {
 
@@ -21,9 +21,9 @@ function processFlickr(pics) {
   });
 };
 
-$(window).bind("load", function() {
-  $("div#basic").slideViewerPro();
-});
+// $(window).bind("load", function() {
+//   $("div#basic").slideViewerPro();
+// });
 
 
 
@@ -60,7 +60,7 @@ $(window).bind("load", function() {
  }
 
   $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
-   processSides(items.appetizers);
+   processSides(items.sides);
    });
 
  function processSides(items) {
@@ -156,13 +156,11 @@ $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu/spec
 $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu-1",
   function(spec){
   spec.entrees.forEach(function(entree){
-    console.log(dailySpecial)
     if (entree.id == dailySpecial) {
       $('.special').html('<h3>Our Daily Special</h3>' + '<p>'+ entree.item  + '<p>' +'Price $' + entree.price + '<p>' + entree.description + '</p>')
     }
   });
 });
-
 
 // MENU TAB BOX FUNCTIONS
 
@@ -190,6 +188,7 @@ $('.tabTitleEntrees').on('click', function(){
 
 });
 
+
 $('.tabTitleSides').on('click', function(){
 
   $('#apps-tab').addClass('menuHide');
@@ -201,3 +200,14 @@ $('.tabTitleSides').on('click', function(){
   $('.tabTitleSides').addClass('sel');
 
 });
+
+///alert box function
+$('.alertBox').on('mouseover', function(){
+  console.log("It's working!")
+  $(this).append("<div class = 'popBox'></div>")
+  $(this).on('mouseout', function(){
+    $('.popBox').addClass('hide');
+  });
+});
+////end alert buttons
+

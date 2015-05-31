@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/svwp_style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/vendor/svwp_style.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -172,34 +172,54 @@
 
 <!-- SCRIPT FOR APPETIZERS -->
   <script type="template" id="app-template">
-       <div class = 'appz'>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
+      <div class="appWrapper">
+       <div class='appz'>
+         <span class='menu-txt'><%= item %></span>
+         <span class='menu-txt'><%= price %></span>
+         <p class = 'menu-desc'><%= description %></p>
        </div>
+
+      <div class='alertBoxWrap'>
+      <div id = 'vegan-box' class='alertBox alertBox4 dimmedAlertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>
+      <div id='fav-box' class='alertBox alertBox3 dimmedAlertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>
+      <div id='spicy-box' class="alertBox alertBox2 dimmedAlertBox"><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>
+      <div id='allergy-box' class='alertBox alertBox1 dimmedAlertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>
+      </div>
   </script><!-- END APP SCRIPT -->
 
 <!-- SCRIPT FOR ENTREES -->
     <script type="template" id="entree-template">
-       <div class = 'entreez'>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
+       <div class = "entreez">
+         <span class="menu-txt"><%= item %></span>
+         <span class="menu-txt"><%= price %></span>
+         <p class = "menu-desc"><%= description %></p>
        </div>
+      <div class='alertBoxWrap'>
+      <div id = 'vegan-box' class='alertBox alertBox4 dimmedAlertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>
+      <div id='fav-box' class='alertBox alertBox3 dimmedAlertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>
+      <div id='spicy-box' class="alertBox alertBox2 dimmedAlertBox"><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>
+      <div id='allergy-box' class='alertBox alertBox1 dimmedAlertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>
+      </div>
+
   </script><!-- END ENTREE SCRIPT -->
 
 <!-- SCRIPT FOR SIDES -->
     <script type="template" id="side-template">
-       <div class = 'sidez'>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
+       <div class = "sidez">
+         <span class="menu-txt"><%= item %></span>
+         <span class="menu-txt"><%= price %></span>
+         <p class = "menu-desc"><%= description %></p>
        </div>
+      <div class='alertBoxWrap'>
+      <div id = 'vegan-box' class='alertBox dimmedAlertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>
+      <div id='fav-box' class='alertBox dimmedAlertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>
+      <div id='spicy-box' class="alertBox dimmedAlertBox"><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>
+      <div id='allergy-box' class='alertBox dimmedAlertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>
+      </div>
   </script><!-- END SIDE SCRIPT -->
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
-  <script src="scripts/vendor/slideViewerPro.1.0.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>
