@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/svwp_style.css" type="text/css" media="screen" />
+
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -16,7 +16,7 @@
 
 
 
-  <aside>Sidebar
+  <aside><h3>Trendy Stuff</h3>
       <!-- Scrolling Menu news -->
       <div class"menunews"> <h3>News</h3>
         <div style="height:135px;width:160px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
@@ -68,32 +68,44 @@
       <li class="textRestaurant">Restaurant</li>
 
       <img class="logoImage" src="images/knifeandfork.png">
+      </ul>
 
-    <div class="socialicons">
-      <button class="zocial-twitter"></button>
-      <button class="zocial-instagram"></button>
-      <button class="zocial-facebook"></button>
-   </div>
+    </div><!--this is the end of the logo div -->
+
+    <div class="socialMedia">
+      <ul>
+        <div class="box"><div class="socialName">Instagram</div><li class="instagram"><img id="image" src="images/instagram-icon.png" width="40" height="40"></li></div>
+
+        <div class="box"><div class="socialName">Facebook</div><li class="facebook"><img id="image" src="images/facebook-icon.png" width="33" height="33"></li></div>
+
+        <div class="box"><div class="socialName">Twitter</div><li class="twitter"><img id="image" src="images/twitter-icon.png" width="40" height="40"></li></div>
+
+      </ul>
+
+    </div><!--this is the end of the socialMedia div-->
+
+
+
+
 
 
 
     </header>
     <!-- this is the end of the header div-->
-    <div id="basic" class="svwp">
 
-        <ul class="foodPics">
+     <div class="flickrPics">
 
-        </ul>
-
-    </div><!--this is the end of the svwp div
+    </div> <!--this is the end of the flickrPics div-->
 
 
-    <!- -Script for the Food Pics from Flickr-->
-    <script type="template" id="foodTemplate">
-      <li>
-        <img src="<%= url_m %>" width="500" height="300">
-      </li>
-    </script>
+    <!--Script for the Food Pics from Flickr-->
+
+
+<!--
+    //   <div id="myslider" style="width:612px; height:612px">
+    //       <img src="<%= url_m %>">
+    //   </div> -->
+
 
 
 
@@ -160,7 +172,9 @@
   <!-- END TAB BOX -->
 
 
+  <footer>
 
+   </footer>
 
 
 
@@ -168,7 +182,6 @@
 
 
   </div><!--this is the end of the container div-->
-
 
 
 
@@ -201,7 +214,8 @@
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
-  <script src="scripts/vendor/slideViewerPro.1.0.js"></script>
+  <script src="scripts/vendor/simpleslider.min.js"></script>
+
   <script src="scripts/main.js"></script>
 
 </body>

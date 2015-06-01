@@ -1,4 +1,3 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
 html {
   box-sizing: border-box; }
 
@@ -6,10 +5,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
-
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif; }
 
 * {
   max-width: 68em;
@@ -21,32 +16,50 @@ html {
     display: inline-block; }
 
 body {
-  background-color: #7F381B; }
+  background-color: #D5D1CE;
+  color: #3B4654; }
 
 aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  background-color: #FD7140;
+  background-color: #CBC5BD;
   display: block;
   height: 1000px;
   border: 1px solid black;
   border-radius: 5px;
   float: left;
+<<<<<<< HEAD
   width: 175px; }
   aside:last-child {
     margin-right: 0; }
+=======
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em; }
+
+aside:last-child {
+  margin-right: 0; }
+>>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .news {
   background-color: grey;
   font-size: 12px;
   height: 156px;
+<<<<<<< HEAD
   width: 160px; }
 
 .special {
   background-color: beige;
   font-size: 12px; }
+=======
+  width: 160px;
+  font-family: "Amatic SC", cursive; }
+
+.special {
+  background-color: lightgrey;
+  font-size: 1em; }
+>>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .gmap {
   width: 100%;
@@ -63,21 +76,34 @@ aside {
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%;
+<<<<<<< HEAD
   height: 100px; }
   .wrapper:last-child {
     margin-right: 0; }
+=======
+  height: auto;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em; }
+
+.wrapper:last-child {
+  margin-right: 0; }
+>>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 header {
   width: 100%;
   height: 162px;
-  background-color: #BD5430;
+  background-color: #CBC5BD;
   border: 1px solid black;
   border-radius: 5px;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 38px;
+  background-image: url("http://pencilscoop.com/public/uploads/images/2013/12/blurred_background_example.jpg");
+  background-size: 100% 162px; }
 
 .logo {
   font-family: "Amatic SC", cursive;
   color: black;
+<<<<<<< HEAD
   margin-top: 33px; }
   .logo ul {
     list-style: none;
@@ -101,51 +127,84 @@ header {
   .logo img {
     width: 40px;
     height: 40px; }
-
-.zocial-twitter {
-  font-size: 30px;
-  border-right: 3px solid black;
-  background-color: lightskyblue;
-  border: 3px solid black;
-  width: 4%;
-  height: 45px;
-  margin-right: 2px; }
-
-.zocial-instagram {
-  font-size: 30px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #663300;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-  height: 46px; }
-
-.zocial-facebook {
-  font-size: 30px;
-  width: 47px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #3b5998;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0; }
-
-.tabs {
-  width: 63%;
-  height: 200px;
-  background-color: #FD7140;
-  margin: 1px;
-  display: inline-block;
+=======
+  width: 468px;
+  margin-top: 33px;
   float: left; }
+
+.logo ul {
+  list-style: none;
+  display: inline; }
+
+.logo li {
+  display: inline-flex; }
+
+.logo .textA {
+  font-size: 3.4em;
+  margin-right: 8px; }
+
+.logo .textReally {
+  font-size: 2.8em;
+  border-top: 1px solid black;
+  margin-right: 8px; }
+
+.logo .textTrendy {
+  font-size: 2.4em;
+  border-top: 1px solid black;
+  margin-right: 8px; }
+
+.logo .textRestaurant {
+  font-size: 2em;
+  border-top: 1px solid black; }
+
+.logo img {
+  width: 40px;
+  height: 40px; }
+>>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
+
+.socialMedia ul {
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0; }
+
+.socialName {
+  opacity: 0;
+  margin-bottom: -30px;
+  margin-top: 10px;
+  position: relative; }
+
+.facebook {
+  padding-left: 5px;
+  padding-top: 5px; }
+
+.box {
+  position: relative;
+  width: 110px;
+  height: 37px; }
+
+#image {
+  position: absolute;
+  transition: margin 2s ease; }
+
+.box:hover #image {
+  position: absolute;
+  transition: margin 2s ease;
+  right: 0; }
+
+.box:hover .socialName {
+  opacity: 1;
+  transition: margin 2s ease; }
 
 .tabBoxWrapper {
   width: 100%;
   height: 600px;
-  background-color: #3F1B0E;
+  background-color: #CBC5BD;
   margin: 1px;
   display: block;
   float: left; }
+<<<<<<< HEAD
   .tabBoxWrapper .tabBox {
     list-style-type: none;
     margin: 30px 0 0 0;
@@ -183,6 +242,53 @@ header {
     margin-left: 10px; }
   .tabBoxWrapper .hide {
     display: none; }
+=======
+
+.tabBoxWrapper .tabBox {
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  padding: 0 0 0.3em 0;
+  display: block;
+  width: 100%;
+  height: 22px; }
+
+.tabBoxWrapper .tabBox::after {
+  display: none; }
+
+.tabBoxWrapper .tabBtns {
+  display: inline-block;
+  width: auto;
+  margin: 0.25px; }
+
+.tabBoxWrapper .tabTitle {
+  text-decoration: none;
+  color: #42454a;
+  background-color: #E7E2DE;
+  border: solid 1px black;
+  border-bottom: none;
+  padding: 0.3em;
+  width: 100%; }
+
+.tabBoxWrapper .tabTitle:hover {
+  background-color: #CBC5BD; }
+
+.tabBoxWrapper .selected {
+  color: black;
+  background-color: #E7E2DE;
+  font-weight: bold;
+  padding: 0.7em 0.3em 0.38em 0.3em; }
+
+.tabBoxWrapper .tabContent {
+  border: 1px solid black;
+  padding: 0.5em;
+  background-color: #E7E2DE;
+  width: 100%;
+  height: 500px;
+  margin-left: 10px; }
+
+.tabBoxWrapper .hide {
+  display: none; }
+>>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .innerTabsWrapper {
   width: 570px;
@@ -201,7 +307,7 @@ header {
 .menuButtons {
   display: block;
   margin: 3px 0 3px 0;
-  background-color: #BD5430;
+  background-color: #D5D1CE;
   padding: 4px 0 3px 0;
   border-left: solid 1px black;
   border-top: solid 1px black;
@@ -210,7 +316,7 @@ header {
   border-bottom-left-radius: 3px; }
 
 .menuButtons:hover {
-  background-color: #3F1B0E; }
+  background-color: #CBC5BD; }
 
 .menuTabTitle {
   color: #E1E3DF;
@@ -220,7 +326,7 @@ header {
   display: block; }
 
 .sel {
-  background-color: #BD5430;
+  background-color: #D5D1CE;
   padding: 4px 0 5px 2px;
   font-weight: bold; }
 
@@ -230,7 +336,7 @@ header {
   float: middle;
   width: 400px;
   height: 500px;
-  background-color: #BD5430;
+  background-color: #D5D1CE;
   margin-top: 3px;
   border-top: solid 1px black; }
 
