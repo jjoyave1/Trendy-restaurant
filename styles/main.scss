@@ -2,17 +2,12 @@
 @import "styles/vendor/neat/neat";
 
 
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif; }
-
 $logoFont:'Amatic SC', cursive;
-$mediumOrange: #BD5430 ;
-$lightOrange: #FD7140 ;
-$darkOrange: #7F381B ;
-$reallyDarkOrange: #3F1B0E ;
+$medium: #D5D1CE;
+$light: #E7E2DE;
+$dark: #CBC5BD;
 $tan: #E7D0AB;
+$fontColor: #3B4654;
 
 
 *{
@@ -20,19 +15,47 @@ $tan: #E7D0AB;
 }
 
 body {
-  background-color: $darkOrange;
+  background-color: $medium;
+  color: $tan;
 }
 
 
 aside{
   @include span-columns(3);
-  background-color: $lightOrange;
+  background-color: $medium;
   display: block;
   height: 1000px;
   border: 1px solid black;
   border-radius: 5px;
   float: left;
   width: 175px;
+}
+
+.news{
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px;
+
+
+}
+.special{
+  background-color: lightgrey;
+  // height: 156px;
+  // width: 160px;
+  font-size: 12px;
+}
+
+.gmap{
+  width: 100%;
+  background-color: lightgrey;
+
+  }
+.locinfo{
+  font-size: 10px;
+}
+.locph{
+  font-size: 10px;
 }
 
 .news{
@@ -64,24 +87,26 @@ aside{
 
 .wrapper{
   @include span-columns(9);
-  height: 100px;
 }
 
 header {
   width: 100%;
   height: 162px;
-  background-color: $mediumOrange;
+  background-color: $dark;
   border: 1px solid black;
   border-radius: 5px;
   display: inline-block;
+  margin-bottom: 38px;
+  background-image: url('http://pencilscoop.com/public/uploads/images/2013/12/blurred_background_example.jpg');
+  background-size: 100% 162px;
 }
 
 .logo {
   font-family: $logoFont;
   color: black;
-  // border-top: 1px solid black;
+  width: 468px;
   margin-top: 33px;
-
+  float: left;
 
   ul {
     list-style: none;
@@ -120,46 +145,56 @@ header {
   }
 }
 
-.zocial-twitter {
-  font-size: 30px;
-  border-right: 3px solid black;
-  background-color: lightskyblue;
-  border: 3px solid black;
-  width: 4%;
-  height: 45px;
-  margin-right: 2px;
+.socialMedia ul {
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  }
+
+
+ .socialName {
+ opacity: 0;
+ margin-bottom: -30px;
+ margin-top: 10px;
+ position: relative;
 }
 
-
-.zocial-instagram {
-  font-size: 30px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #663300;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-  height:46px;
+.facebook {
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
+.box {
 
-.zocial-facebook {
-  font-size: 30px;
-  width: 47px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #3b5998;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
+  position: relative;
+  width: 110px;
+  height: 37px;
+  }
+
+#image {
+  position: absolute;
+  transition: margin 2s ease;
 }
+
+.box:hover #image {
+  position: absolute;
+  transition: margin 2s ease;
+  right: 0;
+}
+
+.box:hover .socialName {
+  opacity: 1;
+  transition: margin 2s ease;
+  }
 
 
 
 .tabs{
   width: 63%;
   height: 200px;
-  background-color: $lightOrange;
+  background-color: $medium;
   margin: 1px;
   display: inline-block;
   float: left;
@@ -171,21 +206,21 @@ header {
 // outer tabs style
 .tabBoxWrapper{
   width: 100%;
-  height: 600px;
-  background-color: $reallyDarkOrange;
+  height: 780px;
+  background-color: $dark;
   margin: 1px;
   display: block;
   float: left;
 
   .tabBox {
   list-style-type: none;
-  margin: 30px 0 0 0;
+  margin: 30px 10px 0 9px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
   height: 22px;
   }
-
+///////////////////////////////////////
   .tabBox::after{
     display: none;
   }
@@ -198,7 +233,7 @@ header {
   .tabTitle {
     text-decoration: none;
     color: #42454a;
-    background-color: $lightOrange;
+    background-color: $light;
     border: solid 1px black;
     border-bottom: none;
     padding: 0.3em;
@@ -206,12 +241,12 @@ header {
   }
 
   .tabTitle:hover {
-    background-color: $darkOrange;
+    background-color: $dark;
   }
 
   .selected {
     color: black;
-    background-color: $lightOrange;
+    background-color: $light;
     font-weight: bold;
     padding: 0.7em 0.3em 0.38em 0.3em;
   }
@@ -219,9 +254,9 @@ header {
   .tabContent {
     border: 1px solid black;
     padding: 0.5em;
-    background-color: $lightOrange;
-    width: 100%;
-    height: 500px;
+    background-color: $light;
+    width: 790px;
+    height: 714px;
     margin-left: 10px;
   }
 
@@ -229,14 +264,22 @@ header {
     display: none;
   }
 }
+//
+//
 // end outer tabs
 
+
 // inner (menu) tabs style
+//
+//
 .innerTabsWrapper{
   width: 570px;
   height: 500px;
 }
-
+.appWrapper {
+  width: auto;
+  height: auto;
+}
 .menuTabBox{
   display: block;
   margin-top: 0;
@@ -251,7 +294,7 @@ header {
 .menuButtons{
   display: block;
   margin: 3px 0 3px 0;
-  background-color: $mediumOrange;
+  background-color: $medium;
   padding: 4px 0 3px 0;
   border-left: solid 1px black;
   border-top: solid 1px black;
@@ -261,7 +304,7 @@ header {
 }
 
 .menuButtons:hover{
-  background-color: $reallyDarkOrange;
+  background-color: $dark;
 }
 
 .menuTabTitle{
@@ -273,7 +316,7 @@ header {
 }
 
 .sel {
-  background-color: $mediumOrange;
+  background-color: $medium;
   padding: 4px 0 5px 2px;
   font-weight: bold;
 }
@@ -282,9 +325,9 @@ header {
   display: inline-block;
   clear: both;
   float: middle;
-  width: 400px;
-  height: 500px;
-  background-color: $mediumOrange;
+  width: 637px;
+  height: 687px;
+  background-color: $medium;
   margin-top: 3px;
   border-top: solid 1px black;
 }
@@ -292,7 +335,140 @@ header {
 .menuHide{
   display: none;
 }
+
+#reservations-tab {
+  width: 772px;
+  height: auto;
+  margin: 16px 0 16px 0;
+}
+
+
+
+.alertBoxWrap{
+  display: block;
+  margin-top: 0;
+  float: right;
+  width: 640px;
+  height: 30px;
+
+}
+
+.alertBox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  float: right;
+  margin: 6px 5px 0 5px;
+  border-radius: 3px;
+  border: solid 1px $dark;
+  position: relative;
+  display: inline-block;
+}
+
+.alertBox:hover {
+  // border: solid 1px $reallyDarkOrange;
+}
+
+.alertBox:hover .popBox {
+  opacity: 1;
+}
+
+.veganIconImg{
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.favIconImg {
+  width: 20px;
+  height: 20px;
+}
+
+.spicyIconImg{
+  width: 18px;
+  height: 18px;
+}
+
+.allergyIconImg{
+  width: 18px;
+  height: 18px;
+}
+
+.popBox{
+  width: 175px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 25px 0 0 0;
+  border: solid 1px #39889D;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+//styling reservations tab
+.resHead{
+  font-family: $logoFont;
+}
+.resName{
+  width: 250px;
+  height: 22px;
+}
+
+.resGuests{
+  width: 250px;
+  height: 22px;
+}
+.resDate{
+  width: 250px;
+  height: 22px;
+}
+.resBox{
+  width:16%;
+  height:40px;
+  background-color: $dark;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+  display: block;
+}
+input[type = button]{
+  width:15em;
+  background-color: $dark;
+  color:white;
+  display:block;
+  margin-top:4%;
+  font-family: $logoFont;
+  font-size: 1.4em;
+}
+
+//end res tab
+
+//styling within apps script
+.appz {
+  width: 640px;
+  height: 142px;
+}
+
+.entreez {
+  width: 640px;
+  height: 100px;
+}
+
+.sidez {
+  width: 640px;
+  height: 10px;
+}
+
+.menu-txt {
+  font-family: $logoFont;
+  font-size: 1.5em;
+}
+
+.menu-desc {
+  margin: 0;
+  font-family: $logoFont;
+  font-size: 1.5em;
+}
 // end inner tabs style
-
-
-
