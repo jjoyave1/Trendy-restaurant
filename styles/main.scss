@@ -464,11 +464,14 @@ input[type = button]{
 .menu-txt {
   font-family: $logoFont;
   font-size: 1.5em;
+  color: $fontColor;
+  height: 1.5em;
 }
 
 .menu-desc {
   margin: 0;
   font-family: $logoFont;
   font-size: 1.5em;
+  color: $fontColor;
 }
 // end inner tabs style
