@@ -12,14 +12,14 @@ $.ajax(url, {
   jsonpCallback: 'jsonFlickrApi',
   success: function(data) {
     var photos = data.photos.photo;
-    // processFlickr(photos);
+
     images.push(photos);
 
 
-  _.each(images, function(image) {
+  images.forEach(function(image) {
 
-    console.log(image.url_m);
-    $('.flickrPics').append('<img src="' + image.url_m + '">');
+
+    $('.flickrPics').html('<img src="' + image.url_m + '">');
     });
 
   }
