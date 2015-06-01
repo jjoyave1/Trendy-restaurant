@@ -16,10 +16,10 @@ $.ajax(url, {
     images.push(photos);
 
 
-  images.forEach(function(image) {
-    console.log(image.url_m);
+  _.each(images, function(image) {
 
-    $('.flickrPics').html('<img src="' + image.url_m + '">');
+    console.log(image.url_m);
+    $('.flickrPics').append('<img src="' + image.url_m + '">');
     });
 
   }
