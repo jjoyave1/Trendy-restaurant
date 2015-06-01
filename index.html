@@ -192,7 +192,7 @@
 
 <!-- SCRIPT FOR APPETIZERS -->
   <script type="template" id="app-template">
-      <div class="appWrapper">
+
        <div class='appz'>
          <span class='menu-txt'><%= item %></span>
          <span class='menu-txt'><%= price %></span>
@@ -215,13 +215,29 @@
 
 <!-- SCRIPT FOR SIDES -->
     <script type="template" id="side-template">
+
        <div class = "sidez">
          <span class="menu-txt"><%= item %></span>
          <span class="menu-txt"><%= price %></span>
          <p class = "menu-desc"><%= description %></p>
        </div>
 
-  </script><!-- END SIDE SCRIPT -->
+    </script><!-- END SIDE SCRIPT -->
+
+    <!-- SCRIPT FOR SIDES -->
+    <script type="template" id="drink-template">
+
+       <div class = "drinkz">
+         <span class="menu-txt"><%= item %></span>
+         <span class="menu-txt"><%= price %></span>
+         <span class = "menu-desc"><%= style %></span>
+         <p class = "menu-desc"><%= description %></p>
+
+       </div>
+
+    </script><!-- END SIDE SCRIPT -->
+
+
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>

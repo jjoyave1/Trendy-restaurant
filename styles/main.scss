@@ -327,10 +327,10 @@ header {
 }
 
 .alertBox:hover {
-  border: solid 1px $reallyDarkOrange;
+  // border: solid 1px $reallyDarkOrange;
 }
 
-.alertbox:hover .popBox {
+.alertBox:hover .popBox {
   opacity: 1;
 }
 

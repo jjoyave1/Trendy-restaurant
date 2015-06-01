@@ -35,6 +35,7 @@ function processFlickr(pics) {
 var appTemplate = _.template($('#app-template').text());
 var entreeTemplate = _.template($('#entree-template').text());
 var sideTemplate = _.template($('#side-template').text());
+var drinkTemplate = _.template($('#drink-template').text());
 
 
 $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
@@ -66,6 +67,7 @@ function processEntrees(items) {
     if (entree.allergies == 1 || entree.favorite == 1 || entree.spicy == 1 || entree.vegan == 1){
       $('#entrees-tab').append("<div class='alertWrapEntrees alertBoxWrap'></div>")
     }
+
     if (entree.allergies == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
     else if (entree.favorite == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
     else if (entree.spicy == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
@@ -89,6 +91,18 @@ function processSides(items) {
   else if (side.favorite == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
   else if (side.spicy == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
   else if (side.vegan == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  });
+};
+
+
+$.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-3", function(x){
+  processDrinks(x.Beer);
+});
+
+function processDrinks(x){
+  x.forEach(function(drk){
+    var $element = drinkTemplate(drk);
+    $('#drink-tab').append($element);
   });
 };
 
@@ -223,10 +237,10 @@ $('.tabTitleSides').on('click', function(){
 });
 
 ///alert box function
-$('.alertBox').on('mouseover', function(){
-  console.log("It's working!")
-  $(this).append("<div class = 'popBox'></div>")
-  $(this).on('mouseout', function(){
+$('.alertBox').mouseover( function(){
+  console.log("It's working!");
+  $(this).append("<div class = 'popBox'></div>");
+  $(this).mouseout( function(){
     $('.popBox').addClass('hide');
   });
 });

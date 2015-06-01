@@ -279,10 +279,7 @@ header {
   position: relative;
   display: inline-block; }
 
-.alertBox:hover {
-  border: solid 1px #3F1B0E; }
-
-.alertbox:hover .popBox {
+.alertBox:hover .popBox {
   opacity: 1; }
 
 .veganIconImg {
