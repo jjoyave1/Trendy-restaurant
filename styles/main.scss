@@ -1,229 +1,164 @@
-@import "styles/vendor/bourbon/bourbon";
-@import "styles/vendor/neat/neat";
-
-
 @import url(http://weloveiconfonts.com/api/?family=zocial);
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif; }
 
-$logoFont:'Amatic SC', cursive;
+* {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  *::after {
+    clear: both;
+    content: "";
+    display: inline-block; }
 
-
-*{
-  @include outer-container();
-}
-
-aside{
-  @include span-columns(2);
+aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
   background-color: orange;
   display: block;
   height: 1000px;
+  float: left; }
+  aside:last-child {
+    margin-right: 0; }
+
+.news {
+  background-color: beige;
+  height: 135px;
+  width: 160px;
+  margin-bottom: 15px; }
+
+.special {
+  background-color: beige;
+  height: 135px;
+  width: 160px; }
+
+.gmap {
+  width: 100%; }
+
+.wrapper {
   float: left;
-}
-
-.news{
-  background-color: beige;
-  height: 135px;
-  width: 160px;
-    margin-bottom: 15px;
-
-}
-.special{
-  background-color: beige;
-  height: 135px;
-  width: 160px;
-}
-.gmap{
-  width: 100%;
-  }
-
-
-.wrapper{
-  @include span-columns(10);
-  height: 100px;
-}
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  height: 100px; }
+  .wrapper:last-child {
+    margin-right: 0; }
 
 header {
   width: 100%;
   height: 120px;
   background-color: orange;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .logo {
-  font-family: $logoFont;
+  font-family: "Amatic SC", cursive;
   color: black;
-  // border-top: 1px solid black;
-  margin-top: 33px;
-
-
-  ul {
+  margin-top: 33px; }
+  .logo ul {
     list-style: none;
-    display: inline;
-  }
-
-  li {
-    display: inline-flex;
-  }
-
-  .textA {
-  font-size: 3.4em;
-  margin-right: 8px;
-  }
-
-  .textReally {
+    display: inline; }
+  .logo li {
+    display: inline-flex; }
+  .logo .textA {
+    font-size: 3.4em;
+    margin-right: 8px; }
+  .logo .textReally {
     font-size: 2.8em;
     border-top: 1px solid black;
-    margin-right: 8px;
-  }
-
-  .textTrendy {
+    margin-right: 8px; }
+  .logo .textTrendy {
     font-size: 2.4em;
     border-top: 1px solid black;
-    margin-right: 8px;
-  }
-
-  .textRestaurant {
+    margin-right: 8px; }
+  .logo .textRestaurant {
     font-size: 2em;
-    border-top: 1px solid black;
-  }
-
-  img {
+    border-top: 1px solid black; }
+  .logo img {
     width: 40px;
-    height: 40px;
-  }
-}
-
-.zocial-twitter {
-  font-size: 30px;
-  border-right: 3px solid black;
-  background-color: lightskyblue;
-  border: 3px solid black;
-  width: 4%;
-  height: 45px;
-  margin-right: 2px;
-}
+    height: 40px; }
 
 
-.zocial-instagram {
-  font-size: 30px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #663300;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-  height:46px;
-}
-
-
-.zocial-facebook {
-  font-size: 30px;
-  width: 47px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #3b5998;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-}
 
 .picScroll {
   width: 100%;
   height: 150px;
   background-color: gold;
-  margin: 1px;
+  margin: 1px; }
 
-}
-
-.tabs{
+.tabs {
   width: 63%;
   height: 200px;
   background-color: yellow;
   margin: 1px;
   display: inline-block;
-  float: left;
-}
+  float: left; }
 
 .picScroll {
   width: 100%;
   height: 150px;
   background-color: gold;
-  margin: 1px;
+  margin: 1px; }
 
-}
-
-
-// outer tabs style
-.tabBoxWrapper{
+.tabBoxWrapper {
   width: 63%;
   height: 450px;
   background-color: yellow;
   margin: 1px;
   display: block;
-  float: left;
-
-  .tabBox {
-  list-style-type: none;
-  margin: 30px 0 0 0;
-  padding: 0 0 0.3em 0;
-  display: block;
-  width: 410px;
-  height: 22px;
-  }
-
-  .tabBox::after{
-    display: none;
-  }
-  .tabBtns {
+  float: left; }
+  .tabBoxWrapper .tabBox {
+    list-style-type: none;
+    margin: 30px 0 0 0;
+    padding: 0 0 0.3em 0;
+    display: block;
+    width: 410px;
+    height: 22px; }
+  .tabBoxWrapper .tabBox::after {
+    display: none; }
+  .tabBoxWrapper .tabBtns {
     display: inline-block;
     width: auto;
-    margin: 0.25px;
-  }
-
-  .tabTitle {
+    margin: 0.25px; }
+  .tabBoxWrapper .tabTitle {
     text-decoration: none;
     color: #42454a;
     background-color: #dedbde;
     border: solid 1px #c9c3ba;
     border-bottom: none;
     padding: 0.3em;
-    width:100%;
-  }
-
-  .tabTitle:hover {
-    background-color: #f1f0ee;
-  }
-
-  .selected {
+    width: 100%; }
+  .tabBoxWrapper .tabTitle:hover {
+    background-color: #f1f0ee; }
+  .tabBoxWrapper .selected {
     color: #000;
     background-color: #f1f0ee;
     font-weight: bold;
-    padding: 0.7em 0.3em 0.38em 0.3em;
-  }
-
-  .tabContent {
+    padding: 0.7em 0.3em 0.38em 0.3em; }
+  .tabBoxWrapper .tabContent {
     border: 1px solid #c9c3ba;
     padding: 0.5em;
     background-color: #f1f0ee;
     width: 570px;
-    height: 500px;
-  }
+    height: 500px; }
+  .tabBoxWrapper .hide {
+    display: none; }
 
-  .hide {
-    display: none;
-  }
-}
-// end outer tabs
-
-// inner (menu) tabs style
-.innerTabsWrapper{
+.innerTabsWrapper {
   width: 570px;
-  height: 500px;
-}
+  height: 500px; }
 
-.menuTabBox{
+.menuTabBox {
   display: block;
   margin-top: 0;
   list-style-type: none;
@@ -231,10 +166,9 @@ header {
   padding-left: 0;
   width: 135px;
   height: auto;
-  float: left;
-}
+  float: left; }
 
-.menuButtons{
+.menuButtons {
   display: block;
   margin: 3px 0 3px 0;
   background-color: #39889D;
@@ -243,28 +177,24 @@ header {
   border-top: solid 1px blue;
   border-bottom: solid 1px blue;
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
+  border-bottom-left-radius: 3px; }
 
-.menuButtons:hover{
-  background-color: lightblue;
-}
+.menuButtons:hover {
+  background-color: lightblue; }
 
-.menuTabTitle{
+.menuTabTitle {
   color: #E1E3DF;
   text-decoration: none;
   width: 115px;
   height: 30px;
-  display: block;
-}
+  display: block; }
 
 .sel {
   background-color: lightblue;
   padding: 4px 0 5px 2px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-.menuContent{
+.menuContent {
   display: inline-block;
   clear: both;
   float: middle;
@@ -272,14 +202,10 @@ header {
   height: 500px;
   background-color: lightblue;
   margin-top: 3px;
-  border-top: solid 1px blue;
-}
+  border-top: solid 1px blue; }
 
-.menuHide{
-  display: none;
-}
-// end inner tabs style
-
+.menuHide {
+  display: none; }
 
 .restaurantScene {
   width: 33%;
@@ -287,39 +213,34 @@ header {
   background-color: yellow;
   margin: 1px;
   display: inline-block;
-  float: right;
-}
+  float: right; }
 
+.name {
+  width: 20%;
+  height: 22px; }
 
-.name{
-   width: 20%;
-  height: 22px;
-}
-
-.guests{
+.guests {
   width: 45px;
-  height: 18px;
-}
-.date{
-  width:15%;
-  height:20px;
-}
-.box{
-  width:16%;
-  height:40px;
-  background-color:black;
-  margin-top:20px;
-  font-size: 23px;
-  text-align:center;
-  color:white;
-  font-family:cursive;
-  display:block;
-}
-h2{
- font-family:cursive;
-  margin-bottom:4px
-}
-.img{
-width:100%;
-}
+  height: 18px; }
 
+.date {
+  width: 15%;
+  height: 20px; }
+
+.box {
+  width: 16%;
+  height: 40px;
+  background-color: black;
+  margin-top: 20px;
+  font-size: 23px;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  display: block; }
+
+h2 {
+  font-family: cursive;
+  margin-bottom: 4px; }
+
+.img {
+  width: 100%; }
