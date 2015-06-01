@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/svwp_style.css" type="text/css" media="screen" />
+
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -16,42 +16,35 @@
 
 
 
+  <aside><h3>Trendy Stuff</h3>
+      <!-- Scrolling Menu news -->
+      <div class"menunews"> <h3>News</h3>
+        <div style="height:135px;width:160px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
 
-  <!-- <aside>Sidebar</aside>
-
-  <div class="wrapper">
-      <header>Logo, header, background pic, social media
-
-
-
-
- -->
-
-
-
-
-
-
-  <aside>Sidebar
-    <div class="news">News
-
-       <script type="text/template" id="newsTemplate">
-
-
-         <div>
+        <div class="news">
+          <script type="text/template" id="newsTemplate">
+          <div>
              <p><%= title %><%= post %></p>
+          </div>
+          </script>
+            </div>
 
-           </div>
-       </script>
-  </div>
+          </div>
+          </div>
 
-  <div class="special"></div>
+      <!-- Menu Special -->
+      <div class="special"></div>
 
 
-    <div class="gmap">Our location
+      <div class="gmap">Our location
 
-   <iframe width="160" height="135" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=3734%20Elvis%20Presley%20Blvd%2C%20Memphis%2C%20TN%2038116&key=AIzaSyCuLGTB7wksJsHHNPl7ROzf-r3VvgXobmc"></iframe>
-    </div><!--this is the end of gmap div -->
+      <iframe width="160" height="156" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=3734%20Elvis%20Presley%20Blvd%2C%20Memphis%2C%20TN%2038116&key=AIzaSyCuLGTB7wksJsHHNPl7ROzf-r3VvgXobmc"></iframe>
+
+        <div class="locinfo">Address: 3734 Elvis Presley Blvd, Memphis, TN</div>
+      <div class="locph">555.007.5555 email: trendy@tiy.com</div>
+
+    </div>
+  <!--   this is the end of gmap div -->
 
 
 
@@ -67,12 +60,6 @@
 
     <header>
 
-
-      <a href="http://facebook.com"/><img src="images/facebook.png">
-
-
-   </div>
-
     <div class="logo">
     <ul>
       <li class="textA">A  </li>
@@ -81,30 +68,44 @@
       <li class="textRestaurant">Restaurant</li>
 
       <img class="logoImage" src="images/knifeandfork.png">
+      </ul>
+
+    </div><!--this is the end of the logo div -->
+
+    <div class="socialMedia">
+      <ul>
+        <div class="box"><div class="socialName">Instagram</div><li class="instagram"><img id="image" src="images/instagram-icon.png" width="40" height="40"></li></div>
+
+        <div class="box"><div class="socialName">Facebook</div><li class="facebook"><img id="image" src="images/facebook-icon.png" width="33" height="33"></li></div>
+
+        <div class="box"><div class="socialName">Twitter</div><li class="twitter"><img id="image" src="images/twitter-icon.png" width="40" height="40"></li></div>
+
+      </ul>
+
+    </div><!--this is the end of the socialMedia div-->
 
 
- </header>
-
-    <div class="picScroll">sidescrolling pic bar</div>
 
 
-    </header><!-- this is the end of the header div-->
 
-    <div id="basic" class="svwp">
 
-        <ul class="foodPics">
 
-        </ul>
+    </header>
+    <!-- this is the end of the header div-->
 
-    </div><!--this is the end of the svwp div-->
+     <div class="flickrPics">
+
+    </div> <!--this is the end of the flickrPics div-->
 
 
     <!--Script for the Food Pics from Flickr-->
-    <script type="template" id="foodTemplate">
-      <li>
-        <img src="<%= url_m %>" width="500" height="300">
-      </li>
-    </script>
+
+
+<!--
+    //   <div id="myslider" style="width:612px; height:612px">
+    //       <img src="<%= url_m %>">
+    //   </div> -->
+
 
 
 
@@ -126,7 +127,7 @@
 
 
       <ul class="tabBox">
-        <li class="tabBtns"><a href="#Menu"  class = "tabTitle tabTitleMenu">Menu</a></li>
+        <li class="tabBtns"><a href="#Menu"  class = "tabTitle tabTitleMenu selected">Menu</a></li>
         <li class="tabBtns"><a href="#Story" class = "tabTitle tabTitleStory">Our Story</a></li>
         <li class="tabBtns"><a href="#History" class = "tabTitle tabTitleHistory">Restaurant History</a></li>
         <li class="tabBtns"><a href="#Drinks" class = "tabTitle tabTitleDrinks">Drinks</a></li>
@@ -142,7 +143,7 @@
             <div class="innerTabsWrapper">
 
               <ul class="menuTabBox">
-                <li class="menuButtons tabTitleApps"><a href="#Apps"  class = "menuTabTitle ">Appetizers</a></li>
+                <li class="menuButtons tabTitleApps sel"><a href="#Apps"  class = "menuTabTitle">Appetizers</a></li>
                 <li class="menuButtons tabTitleEntrees"><a href="#Entrees" class = "menuTabTitle ">Entrees</a></li>
                 <li class="menuButtons tabTitleSides"><a href="#Sides" class = "menuTabTitle ">Sides</a></li>
               </ul>
@@ -162,61 +163,26 @@
           <p id ="story-tab" class = "hide">Ricotta rubber cheese cheeseburger. Hard cheese jarlsberg blue castello halloumi caerphilly hard cheese blue castello brie. Gouda ricotta monterey jack cut the cheese st. agur blue cheese cheesy feet smelly cheese cottage cheese. Monterey jack.</p>
           <p id="history-tab" class = "hide">Ricotta edam paneer. Bavarian bergkase fromage cheese on toast pecorino cut the cheese smelly cheese danish fontina blue castello. Camembert de normandie when the cheese comes out everybody's happy everyone loves port-salut cream cheese cheesecake stinking bishop cheese strings. St. agur blue cheese jarlsberg parmesan parmesan.</p>
           <p id="drinks-tab" class = "hide">Blue castello stinking bishop croque monsieur. Hard cheese cheese strings cheese and wine who moved my cheese babybel manchego hard cheese emmental. Queso monterey jack stinking bishop mascarpone cheddar smelly cheese airedale the big cheese. Cheeseburger croque monsieur manchego stilton hard cheese cheese and biscuits mascarpone cheesy feet. Port-salut cheddar swiss bavarian bergkase.</p>
-    <div class="reservations">
-    <h2>Full Name</h2>
-    <input class="name">
-    <h2>Number of Guests</h2>
-    <input class="guests">
-    <h2>Date</h2>
-    <input class="date">
-    <h2>Special Notes</h2>
-    <textarea></textarea>
-    <h2>Seating Preference</h2>
-    <select>
-        <option>Indoor</option>
-        <option>Outdoor</option>
-    </select>
-    <button class="box">Reserve Table</button>
-    </div>
-       </div>
-    </div>
+        </div><!-- this is the end of the menuBox div-->
+      </div><!-- this is the end of the tabContent div -->
 
 
-    </div>
-
+    </div><!-- this is the end of the tabBoxWrapper-->
 
 
   <!-- END TAB BOX -->
 
 
+  <footer>
 
-
-  </div>
-
-
-  </div>
-<!--
-    <div class="restaurantScene">picture of inside of restaurant</div>this is the end of the restaurantScene div
+   </footer>
 
 
 
-  </div><!this is the end of the wrapper div-->
-
+  </div><!--this is the end of the wrapper div-->
 
 
   </div><!--this is the end of the container div-->
-
-
-      <div class="restaurantScene">picture of inside of restaurant
-      <img src="images/trendyrest.png">
-      </div>
-  <br>
-
-  <footer>
-
-     </footer>
-
-
 
 
 
@@ -249,7 +215,8 @@
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
-  <script src="scripts/vendor/slideViewerPro.1.0.js"></script>
+  <script src="scripts/vendor/simpleslider.min.js"></script>
+
   <script src="scripts/main.js"></script>
 
 </body>

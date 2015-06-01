@@ -1,164 +1,256 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-html {
-  box-sizing: border-box; }
+@import "styles/vendor/bourbon/bourbon";
+@import "styles/vendor/neat/neat";
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit; }
 
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif; }
 
-* {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  *::after {
-    clear: both;
-    content: "";
-    display: inline-block; }
 
-aside {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
-  background-color: orange;
+$logoFont:'Amatic SC', cursive;
+$medium: #D5D1CE;
+$light: #E7E2DE;
+$dark: #CBC5BD;
+$tan: #E7D0AB;
+$fontColor: #3B4654;
+
+
+*{
+  @include outer-container();
+}
+
+body {
+  background-color: $medium;
+  color: $fontColor;
+}
+
+
+aside{
+  @include span-columns(3);
+  background-color: $dark;
   display: block;
   height: 1000px;
-  float: left; }
-  aside:last-child {
-    margin-right: 0; }
-
-.news {
-  background-color: beige;
-  height: 135px;
-  width: 160px;
-  margin-bottom: 15px; }
-
-.special {
-  background-color: beige;
-  height: 135px;
-  width: 160px; }
-
-.gmap {
-  width: 100%; }
-
-.wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
   float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  height: 100px; }
-  .wrapper:last-child {
-    margin-right: 0; }
+  font-family: $logoFont;
+  font-size: 1.5em;
+
+
+
+}
+
+.news{
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px;
+  font-family: $logoFont;
+
+
+}
+.special{
+  background-color: lightgrey;
+  font-size: 1em;
+}
+
+.gmap{
+  width: 100%;
+  background-color: lightgrey;
+
+  }
+.locinfo{
+  font-size: 10px;
+}
+.locph{
+  font-size: 10px;
+}
+
+.wrapper{
+  @include span-columns(9);
+  height: auto;
+  font-family: $logoFont;
+  font-size: 1.5em;
+}
 
 header {
   width: 100%;
-  height: 120px;
-  background-color: orange;
-  display: inline-block; }
+  height: 162px;
+  background-color: $dark;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 38px;
+  background-image: url('http://pencilscoop.com/public/uploads/images/2013/12/blurred_background_example.jpg');
+  background-size: 100% 162px;
+
+}
+
+
+
 
 .logo {
-  font-family: "Amatic SC", cursive;
+  font-family: $logoFont;
   color: black;
-  margin-top: 33px; }
-  .logo ul {
+  width: 468px;
+  margin-top: 33px;
+  float: left;
+
+
+  ul {
     list-style: none;
-    display: inline; }
-  .logo li {
-    display: inline-flex; }
-  .logo .textA {
-    font-size: 3.4em;
-    margin-right: 8px; }
-  .logo .textReally {
+    display: inline;
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  .textA {
+  font-size: 3.4em;
+  margin-right: 8px;
+  }
+
+  .textReally {
     font-size: 2.8em;
     border-top: 1px solid black;
-    margin-right: 8px; }
-  .logo .textTrendy {
+    margin-right: 8px;
+  }
+
+  .textTrendy {
     font-size: 2.4em;
     border-top: 1px solid black;
-    margin-right: 8px; }
-  .logo .textRestaurant {
+    margin-right: 8px;
+  }
+
+  .textRestaurant {
     font-size: 2em;
-    border-top: 1px solid black; }
-  .logo img {
+    border-top: 1px solid black;
+  }
+
+  img {
     width: 40px;
-    height: 40px; }
+    height: 40px;
+  }
+}
+
+
+.socialMedia ul {
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  }
+
+
+ .socialName {
+ opacity: 0;
+ margin-bottom: -30px;
+ margin-top: 10px;
+ position: relative;
+}
+
+.facebook {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.box {
+
+  position: relative;
+  width: 110px;
+  height: 37px;
+  }
+
+#image {
+  position: absolute;
+  transition: margin 2s ease;
+}
+
+.box:hover #image {
+  position: absolute;
+  transition: margin 2s ease;
+  right: 0;
+}
+
+.box:hover .socialName {
+  opacity: 1;
+  transition: margin 2s ease;
+  }
 
 
 
-.picScroll {
+
+
+
+// outer tabs style
+.tabBoxWrapper{
   width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px; }
-
-.tabs {
-  width: 63%;
-  height: 200px;
-  background-color: yellow;
-  margin: 1px;
-  display: inline-block;
-  float: left; }
-
-.picScroll {
-  width: 100%;
-  height: 150px;
-  background-color: gold;
-  margin: 1px; }
-
-.tabBoxWrapper {
-  width: 63%;
-  height: 450px;
-  background-color: yellow;
+  height: 600px;
+  background-color: $dark;
   margin: 1px;
   display: block;
-  float: left; }
-  .tabBoxWrapper .tabBox {
-    list-style-type: none;
-    margin: 30px 0 0 0;
-    padding: 0 0 0.3em 0;
-    display: block;
-    width: 410px;
-    height: 22px; }
-  .tabBoxWrapper .tabBox::after {
-    display: none; }
-  .tabBoxWrapper .tabBtns {
+  float: left;
+
+  .tabBox {
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  padding: 0 0 0.3em 0;
+  display: block;
+  width: 100%;
+  height: 22px;
+  }
+
+  .tabBox::after{
+    display: none;
+  }
+  .tabBtns {
     display: inline-block;
     width: auto;
-    margin: 0.25px; }
-  .tabBoxWrapper .tabTitle {
+    margin: 0.25px;
+  }
+
+  .tabTitle {
     text-decoration: none;
     color: #42454a;
-    background-color: #dedbde;
-    border: solid 1px #c9c3ba;
+    background-color: $light;
+    border: solid 1px black;
     border-bottom: none;
     padding: 0.3em;
-    width: 100%; }
-  .tabBoxWrapper .tabTitle:hover {
-    background-color: #f1f0ee; }
-  .tabBoxWrapper .selected {
-    color: #000;
-    background-color: #f1f0ee;
+    width:100%;
+  }
+
+  .tabTitle:hover {
+    background-color: $dark;
+  }
+
+  .selected {
+    color: black;
+    background-color: $light;
     font-weight: bold;
-    padding: 0.7em 0.3em 0.38em 0.3em; }
-  .tabBoxWrapper .tabContent {
-    border: 1px solid #c9c3ba;
+    padding: 0.7em 0.3em 0.38em 0.3em;
+  }
+
+  .tabContent {
+    border: 1px solid black;
     padding: 0.5em;
-    background-color: #f1f0ee;
-    width: 570px;
-    height: 500px; }
-  .tabBoxWrapper .hide {
-    display: none; }
+    background-color: $light;
+    width: 100%;
+    height: 500px;
+    margin-left: 10px;
+  }
 
-.innerTabsWrapper {
+  .hide {
+    display: none;
+  }
+}
+// end outer tabs
+
+// inner (menu) tabs style
+.innerTabsWrapper{
   width: 570px;
-  height: 500px; }
+  height: 500px;
+}
 
-.menuTabBox {
+.menuTabBox{
   display: block;
   margin-top: 0;
   list-style-type: none;
@@ -166,81 +258,54 @@ header {
   padding-left: 0;
   width: 135px;
   height: auto;
-  float: left; }
+  float: left;
+}
 
-.menuButtons {
+.menuButtons{
   display: block;
   margin: 3px 0 3px 0;
-  background-color: #39889D;
+  background-color: $medium;
   padding: 4px 0 3px 0;
-  border-left: solid 1px blue;
-  border-top: solid 1px blue;
-  border-bottom: solid 1px blue;
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-left-radius: 3px;
+}
 
-.menuButtons:hover {
-  background-color: lightblue; }
+.menuButtons:hover{
+  background-color: $dark;
+}
 
-.menuTabTitle {
+.menuTabTitle{
   color: #E1E3DF;
   text-decoration: none;
   width: 115px;
   height: 30px;
-  display: block; }
+  display: block;
+}
 
 .sel {
-  background-color: lightblue;
+  background-color: $medium;
   padding: 4px 0 5px 2px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-.menuContent {
+.menuContent{
   display: inline-block;
   clear: both;
   float: middle;
   width: 400px;
   height: 500px;
-  background-color: lightblue;
+  background-color: $medium;
   margin-top: 3px;
-  border-top: solid 1px blue; }
+  border-top: solid 1px black;
+}
 
-.menuHide {
-  display: none; }
+.menuHide{
+  display: none;
+}
+// end inner tabs style
 
-.restaurantScene {
-  width: 33%;
-  height: 200px;
-  background-color: yellow;
-  margin: 1px;
-  display: inline-block;
-  float: right; }
 
-.name {
-  width: 20%;
-  height: 22px; }
 
-.guests {
-  width: 45px;
-  height: 18px; }
-
-.date {
-  width: 15%;
-  height: 20px; }
-
-.box {
-  width: 16%;
-  height: 40px;
-  background-color: black;
-  margin-top: 20px;
-  font-size: 23px;
-  text-align: center;
-  color: white;
-  font-family: cursive;
-  display: block; }
-
-h2 {
-  font-family: cursive;
-  margin-bottom: 4px; }
-
-.img {
-  width: 100%; }
