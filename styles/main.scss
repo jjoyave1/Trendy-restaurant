@@ -2,17 +2,14 @@
 @import "styles/vendor/neat/neat";
 
 
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif; }
+
 
 $logoFont:'Amatic SC', cursive;
-$mediumOrange: #BD5430 ;
-$lightOrange: #FD7140 ;
-$darkOrange: #7F381B ;
-$reallyDarkOrange: #3F1B0E ;
+$medium: #D5D1CE;
+$light: #E7E2DE;
+$dark: #CBC5BD;
 $tan: #E7D0AB;
+$fontColor: #3B4654;
 
 
 *{
@@ -20,92 +17,106 @@ $tan: #E7D0AB;
 }
 
 body {
-  background-color: $darkOrange;
+  background-color: $medium;
+  color: $fontColor;
 }
 
-
 aside{
-  background-color: $lightOrange;
-  display: block;
-  height: 1000px;
-  border: 1px solid black;
-  border-radius: 5px;
-  float: left;
-  font-family: $logoFont;
-  @include span-columns(3);
+ background-color: $dark;
+ display: block;
+ height: 1000px;
+ border: 1px solid black;
+ border-radius: 5px;
+ float: left;
+ font-family: $logoFont;
+ @include span-columns(3);
+ margin-top: 20px;
 }
 
 
 h3{
-  padding-left: 5px;
-  font-size: 30px;
+ padding-left: 5px;
+ font-size: 30px;
 }
 .sidebar{
-  font-size: 37px;
-  text-align: center;
+ font-size: 37px;
+ text-align: center;
 }
 .news{
 
-  height: 240px;
-  width: 175px;
-  // display: inline-block;
-  font-size: 20px;
+ height: 240px;
+ width: 175px;
+ // display: inline-block;
+ font-size: 20px;
 
 }
 .aline{
 
-  width: 90%;
-  height: 1px;
-  background: #CBCBCB;
-  margin-left: 12px;
-  margin-top: 4px;
-  margin-bottom: -21px;
+ width: 90%;
+ height: 1px;
+ background: $fontColor;
+ margin-left: 12px;
+ margin-top: 4px;
+ margin-bottom: -21px;
 }
 .special{
-  // background-color: beige;
-  height: 283px;
-  width: 251px;
-  display: inline-block;
-  font-size: 20px;
-  padding-left: 5px;
+ // background-color: beige;
+ height: 283px;
+ width: 251px;
+ display: inline-block;
+ font-size: 20px;
+ padding-left: 5px;
 }
 
 .gmap{
-  width: 100%;
-  // background-color: lightgrey;
+ width: 100%;
+ // background-color: lightgrey;
 
-  }
+ }
 .locinfo{
-  font-size: 22px;
-  text-align: center;
-  font-weight: bold;
+ font-size: 22px;
+ text-align: center;
+ font-weight: bold;
 }
 .locph{
-  font-size: 20px;
-  margin-left: 4px;
-  text-align: center;
-  font-weight: bold;
+ font-size: 20px;
+ margin-left: 4px;
+ text-align: center;
+ font-weight: bold;
 }
+
+
 
 .wrapper{
   @include span-columns(9);
   height: auto;
+  font-family: $logoFont;
+  font-size: 1.5em;
+  margin-top: 20px;
 }
 
 header {
   width: 100%;
   height: 162px;
-  background-color: $mediumOrange;
+  background-color: $dark;
   border: 1px solid black;
   border-radius: 5px;
   display: inline-block;
+  margin-bottom: 38px;
+  background-image: url('http://pencilscoop.com/public/uploads/images/2013/12/blurred_background_example.jpg');
+  background-size: 100% 162px;
+
 }
+
+
+
 
 .logo {
   font-family: $logoFont;
   color: black;
-  // border-top: 1px solid black;
+  width: 468px;
   margin-top: 33px;
+  float: left;
 
 
   ul {
@@ -145,51 +156,63 @@ header {
   }
 }
 
-.zocial-twitter {
-  font-size: 30px;
-  border-right: 3px solid black;
-  background-color: lightskyblue;
-  border: 3px solid black;
-  width: 4%;
-  height: 45px;
-  margin-right: 2px;
+
+.socialMedia ul {
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  }
+
+
+ .socialName {
+ opacity: 0;
+ margin-bottom: -30px;
+ margin-top: 10px;
+ position: relative;
 }
 
-
-.zocial-instagram {
-  font-size: 30px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #663300;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-  height:46px;
+.facebook {
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
+.box {
 
-.zocial-facebook {
-  font-size: 30px;
-  width: 47px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #3b5998;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
+  position: relative;
+  width: 110px;
+  height: 37px;
+  }
+
+#image {
+  position: absolute;
+  transition: margin 2s ease;
 }
 
-
-
-.tabs{
-  width: 63%;
-  height: 200px;
-  background-color: $lightOrange;
-  margin: 1px;
-  display: inline-block;
-  float: left;
+.box:hover #image {
+  position: absolute;
+  transition: margin 2s ease;
+  right: 0;
 }
 
+.box:hover .socialName {
+  opacity: 1;
+  transition: margin 2s ease;
+  }
+
+
+.flickrPics {
+  border: 1px solid $fontColor;
+  height: 400px;
+  width: 600px;
+}
+
+// .flickrPic {
+//   height: 500px;
+//   width: 500px;
+//   background-size: cover;
+// }
 
 
 
@@ -197,7 +220,7 @@ header {
 .tabBoxWrapper{
   width: 100%;
   height: 600px;
-  background-color: $reallyDarkOrange;
+  background-color: $dark;
   margin: 1px;
   display: block;
   float: left;
@@ -223,7 +246,7 @@ header {
   .tabTitle {
     text-decoration: none;
     color: #42454a;
-    background-color: $lightOrange;
+    background-color: $light;
     border: solid 1px black;
     border-bottom: none;
     padding: 0.3em;
@@ -231,12 +254,12 @@ header {
   }
 
   .tabTitle:hover {
-    background-color: $darkOrange;
+    background-color: $dark;
   }
 
   .selected {
     color: black;
-    background-color: $lightOrange;
+    background-color: $light;
     font-weight: bold;
     padding: 0.7em 0.3em 0.38em 0.3em;
   }
@@ -244,7 +267,7 @@ header {
   .tabContent {
     border: 1px solid black;
     padding: 0.5em;
-    background-color: $lightOrange;
+    background-color: $light;
     width: 100%;
     height: 500px;
     margin-left: 10px;
@@ -276,7 +299,7 @@ header {
 .menuButtons{
   display: block;
   margin: 3px 0 3px 0;
-  background-color: $mediumOrange;
+  background-color: $medium;
   padding: 4px 0 3px 0;
   border-left: solid 1px black;
   border-top: solid 1px black;
@@ -286,7 +309,7 @@ header {
 }
 
 .menuButtons:hover{
-  background-color: $reallyDarkOrange;
+  background-color: $dark;
 }
 
 .menuTabTitle{
@@ -298,7 +321,7 @@ header {
 }
 
 .sel {
-  background-color: $mediumOrange;
+  background-color: $medium;
   padding: 4px 0 5px 2px;
   font-weight: bold;
 }
@@ -309,7 +332,7 @@ header {
   float: middle;
   width: 400px;
   height: 500px;
-  background-color: $mediumOrange;
+  background-color: $medium;
   margin-top: 3px;
   border-top: solid 1px black;
 }
@@ -317,54 +340,44 @@ header {
 .menuHide{
   display: none;
 }
-
 // end inner tabs style
 
-// Begin story/history tab
-
-#story-tab{
-      font-family: $logoFont;
-      font-size: 22px;
-
-}
 // FOOTER begins
 
 footer{
-  width: 72%;
-  height: 106px;
-  background-color: #BD5430;
-  border: 1px solid black;
-  border-radius: 5px;
-  display: inline-block;
-  margin-left: 142px;
-  float: right;
-  h5{
-    margin-top: -3px;
-    font-family: $logoFont;
-    font-size: 30px;
-  }
-  .thefoot{
-  font-size: 14px;
-  margin-top: -33px;
-  margin-left: 65px;
-    a {
-  background-color: transparent;
-  text-decoration: none;
-  color: rgb(43, 50, 43);
-      }
-  }
-  .logofoot{
-  font-size: 1px;
-  margin-right: 43px;
-  margin-top: -52px;
+ width: 72%;
+ height: 106px;
+ background-color: $dark;
+ border: 1px solid black;
+ border-radius: 5px;
+ display: inline-block;
+ margin-left: 142px;
+ float: right;
+ h5{
+   margin-top: -3px;
+   font-family: $logoFont;
+   font-size: 30px;
+ }
+ .thefoot{
+ font-size: 14px;
+ margin-top: -33px;
+ margin-left: 65px;
+   a {
+ background-color: transparent;
+ text-decoration: none;
+ color: rgb(43, 50, 43);
+     }
+ }
+ .logofoot{
+ font-size: 1px;
+ margin-right: 43px;
+ margin-top: -52px;
 
-  }
-  h1{
-  font-size: 10px;
-  margin-top: -6px;
-  float: right;
-  font-style: italic;
-  }
+ }
+ h1{
+ font-size: 10px;
+ margin-top: -6px;
+ float: right;
+ font-style: italic;
+ }
 }
-
-
