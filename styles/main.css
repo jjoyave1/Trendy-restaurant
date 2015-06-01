@@ -276,3 +276,43 @@ header {
 
 .menuHide {
   display: none; }
+
+#story-tab {
+  font-family: "Amatic SC", cursive;
+  font-size: 22px; }
+
+footer {
+  width: 72%;
+  height: 106px;
+  background-color: #BD5430;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 142px;
+  float: right; }
+
+footer h5 {
+  margin-top: -3px;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px; }
+
+footer .thefoot {
+  font-size: 14px;
+  margin-top: -33px;
+  margin-left: 65px; }
+
+footer .thefoot a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #2b322b; }
+
+footer .logofoot {
+  font-size: 1px;
+  margin-right: 43px;
+  margin-top: -52px; }
+
+footer h1 {
+  font-size: 10px;
+  margin-top: -6px;
+  float: right;
+  font-style: italic; }

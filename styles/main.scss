@@ -317,7 +317,54 @@ header {
 .menuHide{
   display: none;
 }
+
 // end inner tabs style
 
+// Begin story/history tab
+
+#story-tab{
+      font-family: $logoFont;
+      font-size: 22px;
+
+}
+// FOOTER begins
+
+footer{
+  width: 72%;
+  height: 106px;
+  background-color: #BD5430;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 142px;
+  float: right;
+  h5{
+    margin-top: -3px;
+    font-family: $logoFont;
+    font-size: 30px;
+  }
+  .thefoot{
+  font-size: 14px;
+  margin-top: -33px;
+  margin-left: 65px;
+    a {
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(43, 50, 43);
+      }
+  }
+  .logofoot{
+  font-size: 1px;
+  margin-right: 43px;
+  margin-top: -52px;
+
+  }
+  h1{
+  font-size: 10px;
+  margin-top: -6px;
+  float: right;
+  font-style: italic;
+  }
+}
 
 
