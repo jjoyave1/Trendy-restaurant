@@ -10,51 +10,36 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  *::after {
-    clear: both;
-    content: "";
-    display: inline-block; }
+
+*::after {
+  clear: both;
+  content: "";
+  display: inline-block; }
 
 body {
   background-color: #D5D1CE;
-<<<<<<< HEAD
-  color: #3B4654; }
-=======
   color: #E7D0AB; }
->>>>>>> joe-dev
 
 aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-<<<<<<< HEAD
-  background-color: #CBC5BD;
-=======
   background-color: #D5D1CE;
->>>>>>> joe-dev
   display: block;
   height: 1000px;
   border: 1px solid black;
   border-radius: 5px;
   float: left;
-<<<<<<< HEAD
   width: 175px; }
-  aside:last-child {
-    margin-right: 0; }
-=======
-  font-family: "Amatic SC", cursive;
-  font-size: 1.5em; }
 
 aside:last-child {
   margin-right: 0; }
->>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .news {
   background-color: grey;
   font-size: 12px;
   height: 156px;
-<<<<<<< HEAD
   width: 160px; }
 
 .special {
@@ -80,14 +65,6 @@ aside:last-child {
 .special {
   background-color: beige;
   font-size: 12px; }
-=======
-  width: 160px;
-  font-family: "Amatic SC", cursive; }
-
-.special {
-  background-color: lightgrey;
-  font-size: 1em; }
->>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .gmap {
   width: 100%;
@@ -103,23 +80,10 @@ aside:last-child {
   float: left;
   display: block;
   margin-right: 2.35765%;
-<<<<<<< HEAD
-  width: 74.41059%;
-<<<<<<< HEAD
-  height: 100px; }
-  .wrapper:last-child {
-    margin-right: 0; }
-=======
-  height: auto;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.5em; }
-=======
   width: 74.41059%; }
->>>>>>> joe-dev
 
 .wrapper:last-child {
   margin-right: 0; }
->>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 header {
   width: 100%;
@@ -135,34 +99,6 @@ header {
 .logo {
   font-family: "Amatic SC", cursive;
   color: black;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  margin-top: 33px; }
-  .logo ul {
-    list-style: none;
-    display: inline; }
-  .logo li {
-    display: inline-flex; }
-  .logo .textA {
-    font-size: 3.4em;
-    margin-right: 8px; }
-  .logo .textReally {
-    font-size: 2.8em;
-    border-top: 1px solid black;
-    margin-right: 8px; }
-  .logo .textTrendy {
-    font-size: 2.4em;
-    border-top: 1px solid black;
-    margin-right: 8px; }
-  .logo .textRestaurant {
-    font-size: 2em;
-    border-top: 1px solid black; }
-  .logo img {
-    width: 40px;
-    height: 40px; }
-=======
-=======
->>>>>>> joe-dev
   width: 468px;
   margin-top: 33px;
   float: left; }
@@ -195,7 +131,6 @@ header {
 .logo img {
   width: 40px;
   height: 40px; }
->>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .socialMedia ul {
   list-style: none;
@@ -231,12 +166,6 @@ header {
 .box:hover .socialName {
   opacity: 1;
   transition: margin 2s ease; }
-<<<<<<< HEAD
-
-.tabBoxWrapper {
-  width: 100%;
-  height: 600px;
-=======
 
 .tabs {
   width: 63%;
@@ -249,54 +178,14 @@ header {
 .tabBoxWrapper {
   width: 100%;
   height: 780px;
->>>>>>> joe-dev
   background-color: #CBC5BD;
   margin: 1px;
   display: block;
   float: left; }
-<<<<<<< HEAD
-  .tabBoxWrapper .tabBox {
-    list-style-type: none;
-    margin: 30px 0 0 0;
-    padding: 0 0 0.3em 0;
-    display: block;
-    width: 100%;
-    height: 22px; }
-  .tabBoxWrapper .tabBox::after {
-    display: none; }
-  .tabBoxWrapper .tabBtns {
-    display: inline-block;
-    width: auto;
-    margin: 0.25px; }
-  .tabBoxWrapper .tabTitle {
-    text-decoration: none;
-    color: #42454a;
-    background-color: #FD7140;
-    border: solid 1px black;
-    border-bottom: none;
-    padding: 0.3em;
-    width: 100%; }
-  .tabBoxWrapper .tabTitle:hover {
-    background-color: #7F381B; }
-  .tabBoxWrapper .selected {
-    color: black;
-    background-color: #FD7140;
-    font-weight: bold;
-    padding: 0.7em 0.3em 0.38em 0.3em; }
-  .tabBoxWrapper .tabContent {
-    border: 1px solid black;
-    padding: 0.5em;
-    background-color: #FD7140;
-    width: 100%;
-    height: 500px;
-    margin-left: 10px; }
-  .tabBoxWrapper .hide {
-    display: none; }
-=======
 
 .tabBoxWrapper .tabBox {
   list-style-type: none;
-  margin: 30px 10px 0 9px;
+  margin: 30px 10px 0 10px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
@@ -332,18 +221,12 @@ header {
   border: 1px solid black;
   padding: 0.5em;
   background-color: #E7E2DE;
-<<<<<<< HEAD
-  width: 100%;
-  height: 500px;
-=======
   width: 790px;
   height: 714px;
->>>>>>> joe-dev
   margin-left: 10px; }
 
 .tabBoxWrapper .hide {
   display: none; }
->>>>>>> bee08412743f86c5bf37c2bdbd27e34813ef34c8
 
 .innerTabsWrapper {
   width: 570px;
@@ -393,13 +276,8 @@ header {
   display: inline-block;
   clear: both;
   float: middle;
-<<<<<<< HEAD
-  width: 400px;
-  height: 500px;
-=======
   width: 637px;
   height: 687px;
->>>>>>> joe-dev
   background-color: #D5D1CE;
   margin-top: 3px;
   border-top: solid 1px black; }
