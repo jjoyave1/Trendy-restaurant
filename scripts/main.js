@@ -1,27 +1,43 @@
 //FLICKR PICS
-var foodpicsTemplate = _.template($('#foodTemplate').text());
+// var foodpicsTemplate = _.template($('#foodTemplate').text());
+
+
 var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
 var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=5704-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
 
+var images = [];
 
 $.ajax(url, {
   dataType: 'jsonp',
   jsonpCallback: 'jsonFlickrApi',
   success: function(data) {
     var photos = data.photos.photo;
-    console.log(photos);
-    processFlickr(photos);
+    // processFlickr(photos);
+    images.push(photos);
+
+
+  images.forEach(function(image) {
+    console.log(image.url_m);
+
+    $('.flickrPics').html('<img src="' + image.url_m + '">');
+    });
+
   }
-})
-
-function processFlickr(pics) {
-  pics.forEach(function(pic) {
-    var $element = foodpicsTemplate(pic);
-    $('.view').append($element);
-  });
-};
+});
 
 
+
+// function processFlickr(pics) {
+//   pics.forEach(function(pic) {
+//     var $element = foodpicsTemplate(pic);
+//     $('.flickrPics').append($element);
+
+//   });
+// };
+
+// var imgSlider = new SimpleSlider(document.getElementById('myslider'));
+
+// console.log(imgSlider);
 
 
 
@@ -154,7 +170,7 @@ $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu/spec
 $.getJSON("http://private-anon-d51db0770-restaurantapi.apiary-mock.com/menu-1",
   function(spec){
   spec.entrees.forEach(function(entree){
-    console.log(dailySpecial)
+
     if (entree.id == dailySpecial) {
       $('.special').html('<h3>Our Daily Special</h3>' + '<p>'+ entree.item  + '<p>' +'Price $' + entree.price + '<p>' + entree.description + '</p>')
     }
