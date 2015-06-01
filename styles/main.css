@@ -1,4 +1,3 @@
-@import url(http://weloveiconfonts.com/api/?family=zocial);
 html {
   box-sizing: border-box; }
 
@@ -6,10 +5,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
-
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif; }
 
 * {
   max-width: 68em;
@@ -22,22 +17,44 @@ html {
   display: inline-block; }
 
 body {
-  background-color: #7F381B; }
+  background-color: #D5D1CE;
+  color: #E7D0AB; }
 
 aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  background-color: #FD7140;
+  background-color: #D5D1CE;
   display: block;
   height: 1000px;
   border: 1px solid black;
   border-radius: 5px;
-  float: left; }
+  float: left;
+  width: 175px; }
 
 aside:last-child {
   margin-right: 0; }
+
+.news {
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
+  width: 160px; }
+
+.special {
+  background-color: lightgrey;
+  font-size: 12px; }
+
+.gmap {
+  width: 100%;
+  background-color: lightgrey; }
+
+.locinfo {
+  font-size: 10px; }
+
+.locph {
+  font-size: 10px; }
 
 .news {
   background-color: grey;
@@ -71,15 +88,20 @@ aside:last-child {
 header {
   width: 100%;
   height: 162px;
-  background-color: #BD5430;
+  background-color: #CBC5BD;
   border: 1px solid black;
   border-radius: 5px;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 38px;
+  background-image: url("http://pencilscoop.com/public/uploads/images/2013/12/blurred_background_example.jpg");
+  background-size: 100% 162px; }
 
 .logo {
   font-family: "Amatic SC", cursive;
   color: black;
-  margin-top: 33px; }
+  width: 468px;
+  margin-top: 33px;
+  float: left; }
 
 .logo ul {
   list-style: none;
@@ -110,39 +132,45 @@ header {
   width: 40px;
   height: 40px; }
 
-.zocial-twitter {
-  font-size: 30px;
-  border-right: 3px solid black;
-  background-color: lightskyblue;
-  border: 3px solid black;
-  width: 4%;
-  height: 45px;
-  margin-right: 2px; }
+.socialMedia ul {
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 0;
+  padding-top: 0; }
 
-.zocial-instagram {
-  font-size: 30px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #663300;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0;
-  height: 46px; }
+.socialName {
+  opacity: 0;
+  margin-bottom: -30px;
+  margin-top: 10px;
+  position: relative; }
 
-.zocial-facebook {
-  font-size: 30px;
-  width: 47px;
-  border: 3px solid black;
-  margin-top: 2px;
-  background-color: #3b5998;
-  padding-right: 4px;
-  padding-left: 3px;
-  margin: 0; }
+.facebook {
+  padding-left: 5px;
+  padding-top: 5px; }
+
+.box {
+  position: relative;
+  width: 110px;
+  height: 37px; }
+
+#image {
+  position: absolute;
+  transition: margin 2s ease; }
+
+.box:hover #image {
+  position: absolute;
+  transition: margin 2s ease;
+  right: 0; }
+
+.box:hover .socialName {
+  opacity: 1;
+  transition: margin 2s ease; }
 
 .tabs {
   width: 63%;
   height: 200px;
-  background-color: #FD7140;
+  background-color: #D5D1CE;
   margin: 1px;
   display: inline-block;
   float: left; }
@@ -150,7 +178,7 @@ header {
 .tabBoxWrapper {
   width: 100%;
   height: 780px;
-  background-color: #3F1B0E;
+  background-color: #CBC5BD;
   margin: 1px;
   display: block;
   float: left; }
@@ -174,25 +202,25 @@ header {
 .tabBoxWrapper .tabTitle {
   text-decoration: none;
   color: #42454a;
-  background-color: #FD7140;
+  background-color: #E7E2DE;
   border: solid 1px black;
   border-bottom: none;
   padding: 0.3em;
   width: 100%; }
 
 .tabBoxWrapper .tabTitle:hover {
-  background-color: #7F381B; }
+  background-color: #CBC5BD; }
 
 .tabBoxWrapper .selected {
   color: black;
-  background-color: #FD7140;
+  background-color: #E7E2DE;
   font-weight: bold;
   padding: 0.7em 0.3em 0.38em 0.3em; }
 
 .tabBoxWrapper .tabContent {
   border: 1px solid black;
   padding: 0.5em;
-  background-color: #FD7140;
+  background-color: #E7E2DE;
   width: 790px;
   height: 714px;
   margin-left: 10px; }
@@ -201,6 +229,7 @@ header {
   display: none; }
 
 .innerTabsWrapper {
+  width: 570px;
   height: 500px; }
 
 .appWrapper {
@@ -220,7 +249,7 @@ header {
 .menuButtons {
   display: block;
   margin: 3px 0 3px 0;
-  background-color: #BD5430;
+  background-color: #D5D1CE;
   padding: 4px 0 3px 0;
   border-left: solid 1px black;
   border-top: solid 1px black;
@@ -229,7 +258,7 @@ header {
   border-bottom-left-radius: 3px; }
 
 .menuButtons:hover {
-  background-color: #3F1B0E; }
+  background-color: #CBC5BD; }
 
 .menuTabTitle {
   color: #E1E3DF;
@@ -239,7 +268,7 @@ header {
   display: block; }
 
 .sel {
-  background-color: #BD5430;
+  background-color: #D5D1CE;
   padding: 4px 0 5px 2px;
   font-weight: bold; }
 
@@ -249,7 +278,7 @@ header {
   float: middle;
   width: 637px;
   height: 687px;
-  background-color: #BD5430;
+  background-color: #D5D1CE;
   margin-top: 3px;
   border-top: solid 1px black; }
 
@@ -275,7 +304,7 @@ header {
   float: right;
   margin: 6px 5px 0 5px;
   border-radius: 3px;
-  border: solid 1px #7F381B;
+  border: solid 1px #CBC5BD;
   position: relative;
   display: inline-block; }
 
@@ -329,7 +358,7 @@ header {
 .resBox {
   width: 16%;
   height: 40px;
-  background-color: #7F381B;
+  background-color: #CBC5BD;
   font-size: 12px;
   text-align: left;
   color: white;
@@ -337,7 +366,7 @@ header {
 
 input[type=button] {
   width: 15em;
-  background-color: #3F1B0E;
+  background-color: #CBC5BD;
   color: white;
   display: block;
   margin-top: 4%;
