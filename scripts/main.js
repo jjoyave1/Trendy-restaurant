@@ -5,22 +5,33 @@
 var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
 var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=5704-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
 
-var images = [];
+// var images = [];
 
 $.ajax(url, {
   dataType: 'jsonp',
   jsonpCallback: 'jsonFlickrApi',
   success: function(data) {
+    console.log('data', data);
+
     var photos = data.photos.photo;
 
-    images.push(photos);
+    // images.push(photos);
 
+    photos.forEach(function(image) {
 
-  images.forEach(function(image) {
+      $('.flickrPics').append('<img src="' + image.url_m + '">');
 
-
-    $('.flickrPics').html('<img src="' + image.url_m + '">');
     });
+
+    var imgSlider = new SimpleSlider(document.querySelector('.flickrPics'),{
+        autoPlay:true,
+        transitionProperty:'left',
+        startValue:'-612px',
+        visibleValue:'0px',
+        endValue:'612px'
+      }
+
+    );
 
   }
 });
@@ -35,7 +46,7 @@ $.ajax(url, {
 //   });
 // };
 
-// var imgSlider = new SimpleSlider(document.getElementById('myslider'));
+
 
 // console.log(imgSlider);
 
