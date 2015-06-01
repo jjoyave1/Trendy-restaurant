@@ -121,36 +121,36 @@ header {
   list-style: none;
   float: right;
   margin-right: 10px;
-  margin-top: 10px;
-  height: 300px; }
+  margin-top: 0;
+  padding-top: 0; }
 
-.facebook li {
-  margin-right: 10px;
-  padding: 0; }
-
-.socialMedia span {
+.socialName {
   opacity: 0;
-  display: inline-block;
-  height: 10px; }
+  margin-bottom: -30px;
+  margin-top: 10px;
+  position: relative; }
 
-.socialMedia .box {
+.facebook {
+  padding-left: 5px;
+  padding-top: 5px; }
+
+.box {
   position: relative;
-  height: 50px; }
+  width: 110px;
+  height: 37px; }
 
-.socialMedia li {
-  height: 40px; }
-
-.socialMedia #image {
+#image {
   position: absolute;
-  transition: position 2s ease; }
+  transition: margin 2s ease; }
 
-.socialMedia .box:hover #image {
+.box:hover #image {
   position: absolute;
-  transition: position 2s ease;
+  transition: margin 2s ease;
   right: 0; }
 
-.socialMedia .box:hover span {
-  opacity: 1; }
+.box:hover .socialName {
+  opacity: 1;
+  transition: margin 2s ease; }
 
 .tabBoxWrapper {
   width: 100%;

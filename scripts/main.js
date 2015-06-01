@@ -17,7 +17,7 @@ $.ajax(url, {
 function processFlickr(pics) {
   pics.forEach(function(pic) {
     var $element = foodpicsTemplate(pic);
-    $('.foodPics').append($element);
+    $('.view').append($element);
   });
 };
 
