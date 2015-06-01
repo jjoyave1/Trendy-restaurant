@@ -1,3 +1,4 @@
+
 Our group is: Joe, Jim, Jamie and Khalif.
 
 Your task is to create a clean one page website that gives our customers as much info about us as possible. The following are required:

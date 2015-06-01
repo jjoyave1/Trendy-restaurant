@@ -17,14 +17,22 @@ html {
 
 body {
   background-color: #D5D1CE;
+<<<<<<< HEAD
   color: #3B4654; }
+=======
+  color: #E7D0AB; }
+>>>>>>> joe-dev
 
 aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+<<<<<<< HEAD
   background-color: #CBC5BD;
+=======
+  background-color: #D5D1CE;
+>>>>>>> joe-dev
   display: block;
   height: 1000px;
   border: 1px solid black;
@@ -47,6 +55,26 @@ aside:last-child {
   font-size: 12px;
   height: 156px;
 <<<<<<< HEAD
+  width: 160px; }
+
+.special {
+  background-color: lightgrey;
+  font-size: 12px; }
+
+.gmap {
+  width: 100%;
+  background-color: lightgrey; }
+
+.locinfo {
+  font-size: 10px; }
+
+.locph {
+  font-size: 10px; }
+
+.news {
+  background-color: grey;
+  font-size: 12px;
+  height: 156px;
   width: 160px; }
 
 .special {
@@ -75,6 +103,7 @@ aside:last-child {
   float: left;
   display: block;
   margin-right: 2.35765%;
+<<<<<<< HEAD
   width: 74.41059%;
 <<<<<<< HEAD
   height: 100px; }
@@ -84,6 +113,9 @@ aside:last-child {
   height: auto;
   font-family: "Amatic SC", cursive;
   font-size: 1.5em; }
+=======
+  width: 74.41059%; }
+>>>>>>> joe-dev
 
 .wrapper:last-child {
   margin-right: 0; }
@@ -103,6 +135,7 @@ header {
 .logo {
   font-family: "Amatic SC", cursive;
   color: black;
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin-top: 33px; }
   .logo ul {
@@ -128,6 +161,8 @@ header {
     width: 40px;
     height: 40px; }
 =======
+=======
+>>>>>>> joe-dev
   width: 468px;
   margin-top: 33px;
   float: left; }
@@ -196,10 +231,25 @@ header {
 .box:hover .socialName {
   opacity: 1;
   transition: margin 2s ease; }
+<<<<<<< HEAD
 
 .tabBoxWrapper {
   width: 100%;
   height: 600px;
+=======
+
+.tabs {
+  width: 63%;
+  height: 200px;
+  background-color: #D5D1CE;
+  margin: 1px;
+  display: inline-block;
+  float: left; }
+
+.tabBoxWrapper {
+  width: 100%;
+  height: 780px;
+>>>>>>> joe-dev
   background-color: #CBC5BD;
   margin: 1px;
   display: block;
@@ -246,7 +296,7 @@ header {
 
 .tabBoxWrapper .tabBox {
   list-style-type: none;
-  margin: 30px 0 0 0;
+  margin: 30px 10px 0 9px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
@@ -282,8 +332,13 @@ header {
   border: 1px solid black;
   padding: 0.5em;
   background-color: #E7E2DE;
+<<<<<<< HEAD
   width: 100%;
   height: 500px;
+=======
+  width: 790px;
+  height: 714px;
+>>>>>>> joe-dev
   margin-left: 10px; }
 
 .tabBoxWrapper .hide {
@@ -293,6 +348,10 @@ header {
 .innerTabsWrapper {
   width: 570px;
   height: 500px; }
+
+.appWrapper {
+  width: auto;
+  height: auto; }
 
 .menuTabBox {
   display: block;
@@ -334,11 +393,125 @@ header {
   display: inline-block;
   clear: both;
   float: middle;
+<<<<<<< HEAD
   width: 400px;
   height: 500px;
+=======
+  width: 637px;
+  height: 687px;
+>>>>>>> joe-dev
   background-color: #D5D1CE;
   margin-top: 3px;
   border-top: solid 1px black; }
 
 .menuHide {
   display: none; }
+
+#reservations-tab {
+  width: 772px;
+  height: auto;
+  margin: 16px 0 16px 0; }
+
+.alertBoxWrap {
+  display: block;
+  margin-top: 0;
+  float: right;
+  width: 640px;
+  height: 30px; }
+
+.alertBox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  float: right;
+  margin: 6px 5px 0 5px;
+  border-radius: 3px;
+  border: solid 1px #CBC5BD;
+  position: relative;
+  display: inline-block; }
+
+.alertBox:hover .popBox {
+  opacity: 1; }
+
+.veganIconImg {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px; }
+
+.favIconImg {
+  width: 20px;
+  height: 20px; }
+
+.spicyIconImg {
+  width: 18px;
+  height: 18px; }
+
+.allergyIconImg {
+  width: 18px;
+  height: 18px; }
+
+.popBox {
+  width: 175px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 25px 0 0 0;
+  border: solid 1px #39889D;
+  border-radius: 3px;
+  opacity: 0.5; }
+
+.resHead {
+  font-family: "Amatic SC", cursive; }
+
+.resName {
+  width: 250px;
+  height: 22px; }
+
+.resGuests {
+  width: 250px;
+  height: 22px; }
+
+.resDate {
+  width: 250px;
+  height: 22px; }
+
+.resBox {
+  width: 16%;
+  height: 40px;
+  background-color: #CBC5BD;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+  display: block; }
+
+input[type=button] {
+  width: 15em;
+  background-color: #CBC5BD;
+  color: white;
+  display: block;
+  margin-top: 4%;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.4em; }
+
+.appz {
+  width: 640px;
+  height: 142px; }
+
+.entreez {
+  width: 640px;
+  height: 100px; }
+
+.sidez {
+  width: 640px;
+  height: 10px; }
+
+.menu-txt {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em; }
+
+.menu-desc {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em; }
