@@ -21,10 +21,6 @@ body {
   color: #3B4654; }
 
 aside {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
   background-color: #CBC5BD;
   display: block;
   height: 1000px;
@@ -32,31 +28,56 @@ aside {
   border-radius: 5px;
   float: left;
   font-family: "Amatic SC", cursive;
-  font-size: 1.5em; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-top: 20px; }
 
 aside:last-child {
   margin-right: 0; }
 
+h3 {
+  padding-left: 5px;
+  font-size: 30px; }
+
+.sidebar {
+  font-size: 37px;
+  text-align: center; }
+
 .news {
-  background-color: grey;
-  font-size: 12px;
-  height: 156px;
-  width: 160px;
-  font-family: "Amatic SC", cursive; }
+  height: 240px;
+  width: 175px;
+  font-size: 20px; }
+
+.aline {
+  width: 90%;
+  height: 1px;
+  background: #3B4654;
+  margin-left: 12px;
+  margin-top: 4px;
+  margin-bottom: -21px; }
 
 .special {
-  background-color: lightgrey;
-  font-size: 1em; }
+  height: 283px;
+  width: 251px;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 5px; }
 
 .gmap {
-  width: 100%;
-  background-color: lightgrey; }
+  width: 100%; }
 
 .locinfo {
-  font-size: 10px; }
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold; }
 
 .locph {
-  font-size: 10px; }
+  font-size: 20px;
+  margin-left: 4px;
+  text-align: center;
+  font-weight: bold; }
 
 .wrapper {
   float: left;
@@ -65,7 +86,8 @@ aside:last-child {
   width: 74.41059%;
   height: auto;
   font-family: "Amatic SC", cursive;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-top: 20px; }
 
 .wrapper:last-child {
   margin-right: 0; }
@@ -153,8 +175,9 @@ header {
   transition: margin 2s ease; }
 
 .flickrPics {
-  height: 612px;
-  width: 612px; }
+  border: 1px solid #3B4654;
+  height: 400px;
+  width: 600px; }
 
 .tabBoxWrapper {
   width: 100%;
@@ -261,3 +284,39 @@ header {
 
 .menuHide {
   display: none; }
+
+footer {
+  width: 72%;
+  height: 106px;
+  background-color: #CBC5BD;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 142px;
+  float: right; }
+
+footer h5 {
+  margin-top: -3px;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px; }
+
+footer .thefoot {
+  font-size: 14px;
+  margin-top: -33px;
+  margin-left: 65px; }
+
+footer .thefoot a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #2b322b; }
+
+footer .logofoot {
+  font-size: 1px;
+  margin-right: 43px;
+  margin-top: -52px; }
+
+footer h1 {
+  font-size: 10px;
+  margin-top: -6px;
+  float: right;
+  font-style: italic; }

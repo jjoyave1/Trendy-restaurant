@@ -3,7 +3,7 @@
 
 
 var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
-var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=133502986-72157653593281981&format=json&extras=url_l&callback=jsonFlickrApi';
+var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=133502986-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
 
 
 
@@ -11,15 +11,15 @@ $.ajax(url, {
   dataType: 'jsonp',
   jsonpCallback: 'jsonFlickrApi',
   success: function(data) {
-    console.log('data', data);
+
 
     var photos = data.photos.photo;
-
+    console.log(photos);
 
 
     photos.forEach(function(image) {
 
-      $('.flickrPics').append('<img src="' + image.url_l + '">');
+      $('.flickrPics').append('<div style="width: 600px; height: 400px; background-image: url(' + image.url_m + '); background-size: cover;"></div>');
 
     });
 
@@ -35,24 +35,6 @@ $.ajax(url, {
 
   }
 });
-
-
-
-// function processFlickr(pics) {
-//   pics.forEach(function(pic) {
-//     var $element = foodpicsTemplate(pic);
-//     $('.flickrPics').append($element);
-
-//   });
-// };
-
-
-
-// console.log(imgSlider);
-
-
-
-
 
 
 
