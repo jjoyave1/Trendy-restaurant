@@ -143,7 +143,7 @@ $('.tabTitleDrinks').on('click', function(){
   $('#drinks-tab').removeClass('hide');
 
   $('.tabTitleMenu').removeClass('selected');
-  $('.tabTitleHistory').removeClass('selected');
+  $('.tabTitleReservations').removeClass('selected');
   $('.tabTitleDrinks').addClass('selected');
   $('.tabTitleStory').removeClass('selected');
 
