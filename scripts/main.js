@@ -18,6 +18,7 @@ $.ajax(url, {
 
   _.each(images, function(image) {
 
+    console.log(image.url_m);
     $('.flickrPics').append('<img src="' + image.url_m + '">');
     });
 
@@ -58,12 +59,20 @@ function processApps(items) {
   var $element = appTemplate(app);
   $('#apps-tab').append($element);
   if (app.allergies == 1 || app.favorite == 1 || app.spicy == 1 || app.vegan == 1){
-  $('#apps-tab').append("<div class='alertWrapApps alertBoxWrap'></div>")
+  $('#apps-tab').append("<div class='alertWrapApps alertBoxWrap'><div class = popBox></div></div>")
   }
-  if (app.allergies == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
-  else if (app.favorite == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
-  else if (app.spicy == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
-  else if (app.vegan == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  if (app.allergies == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")
+    $('.popBox').append("This food contains common allergens." + "<br/>")
+  }
+  else if (app.favorite == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")
+    $('.popBox').append("A menu favorite!" + "<br/>")
+  }
+  else if (app.spicy == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")
+    $('.popBox').append("This food is spicy." + "<br/>")
+  }
+  else if (app.vegan == 1) {$('.alertWrapApps').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")
+    $('.popBox').append("A vegan favorite." + "<br/>")
+  }
   });
 };
 
@@ -75,12 +84,20 @@ function processEntrees(items) {
   var $element = entreeTemplate(entree);
   $('#entrees-tab').append($element);
   if (entree.allergies == 1 || entree.favorite == 1 || entree.spicy == 1 || entree.vegan == 1){
-  $('#entrees-tab').append("<div class='alertWrapEntrees alertBoxWrap'></div>")
+  $('#entrees-tab').append("<div class='alertWrapEntrees alertBoxWrap'><div class = popBox></div></div>")
   }
-  if (entree.allergies == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
-  else if (entree.favorite == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
-  else if (entree.spicy == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
-  else if (entree.vegan == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  if (entree.allergies == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")
+    $('.popBox').append("This food contains common allergens." + "<br/>")
+  }
+  else if (entree.favorite == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")
+    $('.popBox').append("A menu favorite!" + "<br/>")
+  }
+  else if (entree.spicy == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")
+    $('.popBox').append("This food is spicy." + "<br/>")
+  }
+  else if (entree.vegan == 1) {$('.alertWrapEntrees').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")
+    $('.popBox').append("A vegan favorite." + "<br/>")
+  }
   });
 };
 $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-1", function(items){
@@ -91,12 +108,20 @@ function processSides(items) {
   var $element = sideTemplate(side);
   $('#sides-tab').append($element);
   if (side.allergies == 1 || side.favorite == 1 || side.spicy == 1 || side.vegan == 1) {
-  $('#sides-tab').append("<div class='alertWrapSides alertBoxWrap'></div>")
+  $('#sides-tab').append("<div class='alertWrapSides alertBoxWrap'><div class = popBox></div></div>")
   }
-  if (side.allergies == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")}
-  else if (side.favorite == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")}
-  else if (side.spicy == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")}
-  else if (side.vegan == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")}
+  if (side.allergies == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/allergies-icon.png'class='allergyIconImg'></div>")
+    $('.popBox').append("This food contains common allergens." + "<br/>")
+  }
+  else if (side.favorite == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/favorites-icon.png' class='favIconImg'></div>")
+    $('.popBox').append("A menu favorite!" + "<br/>")
+  }
+  else if (side.spicy == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/spicy-icon.jpg' class='spicyIconImg'></div>")
+    $('.popBox').append("This food is spicy." + "<br/>")
+  }
+  else if (side.vegan == 1) {$('.alertWrapSides').append("<div class='alertBox'><img src='images/vegan-icon.png' class='veganIconImg'></div>")
+    $('.popBox').append("A vegan favorite." + "<br/>")
+  }
   });
 };
 
@@ -106,7 +131,7 @@ $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-3", 
 function processDrinks(x){
   x.forEach(function(drk){
   var $element = drinkTemplate(drk);
-  $('#drinks-tab').append($element);
+  $('#drink-tab').append($element);
   });
 };
 // START OF TAB BOX FUNCTIONS
