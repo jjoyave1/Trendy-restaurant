@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +23,8 @@
 
      <div class"menunews"> <h3>News</h3>
        <div style="height:250px;width:251px;border:0px solid ;font:16px/26px $logoFont;overflow:auto;">
+
+
 
        <div class="news">
          <script type="text/template" id="newsTemplate">
@@ -96,7 +99,6 @@
 
 
 
-
 <!--   JOE TAB BOX BUILD MAY 27 -->
 
     <div class="tabBoxWrapper">
@@ -105,7 +107,7 @@
       <ul class="tabBox">
         <li class="tabBtns"><a href="#Menu"  class = "tabTitle tabTitleMenu selected">Menu</a></li>
         <li class="tabBtns"><a href="#Story" class = "tabTitle tabTitleStory">Our Story</a></li>
-        <li class="tabBtns"><a href="#History" class = "tabTitle tabTitleHistory">Restaurant History</a></li>
+        <li class="tabBtns"><a href="#History" class = "tabTitle tabTitleReservations">Reservations</a></li>
         <li class="tabBtns"><a href="#Drinks" class = "tabTitle tabTitleDrinks">Drinks</a></li>
 
       </ul>
@@ -151,6 +153,30 @@
          In 2013 Tom realised the dream that he had harboured for ten years and opened A Really Trendy Restaurant.  The restaurant burned down yesterday....</p>
           <p id="history-tab" class = "hide">Ricotta edam paneer. Bavarian bergkase fromage cheese on toast pecorino cut the cheese smelly cheese danish fontina blue castello. Camembert de normandie when the cheese comes out everybody's happy everyone loves port-salut cream cheese cheesecake stinking bishop cheese strings. St. agur blue cheese jarlsberg parmesan parmesan.</p>
           <p id="drinks-tab" class = "hide">Blue castello stinking bishop croque monsieur. Hard cheese cheese strings cheese and wine who moved my cheese babybel manchego hard cheese emmental. Queso monterey jack stinking bishop mascarpone cheddar smelly cheese airedale the big cheese. Cheeseburger croque monsieur manchego stilton hard cheese cheese and biscuits mascarpone cheesy feet. Port-salut cheddar swiss bavarian bergkase.</p>
+
+          <div id="reservations-tab" class="hide">
+
+            <h2 class="resHead">Full Name</h2>
+            <input class="resName">
+            <h2 class="resHead">Number of Guests</h2>
+            <input class="resGuests">
+            <h2 class="resHead">Date</h2>
+            <input class="resDate">
+            <h2 class="resHead">Special Notes</h2>
+            <textarea class="resBox"></textarea>
+            (click and drag to resize)
+            <h2 class="resHead">Seating Preference</h2>
+
+            <select>
+              <option>Indoor</option>
+              <option>Outdoor</option>
+            </select>
+
+            <input type="button" value="Reserve Table" onclick="button()">
+
+          </div>
+          <p id="drinks-tab" class = "hide"></p>
+
         </div><!-- this is the end of the menuBox div-->
       </div><!-- this is the end of the tabContent div -->
 
@@ -188,30 +214,40 @@
 
 <!-- SCRIPT FOR APPETIZERS -->
   <script type="template" id="app-template">
-       <div>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
+       <div class = "appz">
+         <span class="menu-txt"><%= item %></span>
+         <span class="menu-txt"> -- <%= price %></span><br>
+         <p class = "menu-desc"><%= description %></p><br /><br />
        </div>
   </script><!-- END APP SCRIPT -->
 
 <!-- SCRIPT FOR ENTREES -->
     <script type="template" id="entree-template">
-       <div>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
+       <div class = "entreez">
+         <span class="menu-txt"><%= item %></span>
+         <span class="menu-txt"> -- <%= price %></span><br>
+         <p class = "menu-desc"><%= description %></p><br /><br />
        </div>
   </script><!-- END ENTREE SCRIPT -->
 
 <!-- SCRIPT FOR SIDES -->
     <script type="template" id="side-template">
-       <div>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
+       <div class = "sidez">
+         <span class="menu-txt"><%= item %></span>
+         <span class="menu-txt"> -- <%= price %></span><br>
+         <p class = "menu-desc"><%= description %></p><br /><br />
        </div>
   </script><!-- END SIDE SCRIPT -->
+
+    <!-- SCRIPT FOR DRINKS -->
+    <script type="template" id="drink-template">
+       <div class = "drinkz">
+         <div class="menu-txt"><%= item %></div>
+         <span class="menu-txt"> -- <%= price %></span><br>
+         <span class = "menu-desc">(<%= style %>)</span>
+         <p class = "menu-desc"><%= description %></p><br /><br />
+       </div>
+  </script><!-- END DRINKS SCRIPT -->
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>

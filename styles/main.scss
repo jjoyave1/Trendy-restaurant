@@ -2,8 +2,6 @@
 @import "styles/vendor/neat/neat";
 
 
-
-
 $logoFont:'Amatic SC', cursive;
 $medium: #D5D1CE;
 $light: #E7E2DE;
@@ -18,7 +16,7 @@ $fontColor: #3B4654;
 
 body {
   background-color: $medium;
-  color: $fontColor;
+  color: $tan;
 }
 
 aside{
@@ -31,6 +29,7 @@ aside{
  font-family: $logoFont;
  @include span-columns(3);
  margin-top: 20px;
+ color: $fontColor;
 }
 
 
@@ -89,10 +88,12 @@ h3{
 
 .wrapper{
   @include span-columns(9);
+
   height: auto;
   font-family: $logoFont;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 20px;
+
 }
 
 header {
@@ -110,12 +111,11 @@ header {
 
 
 
-
 .logo {
   font-family: $logoFont;
   color: black;
   width: 468px;
-  margin-top: 33px;
+  margin-top: 67px;
   float: left;
 
 
@@ -129,24 +129,24 @@ header {
   }
 
   .textA {
-  font-size: 3.4em;
+  font-size: 4.2em;
   margin-right: 8px;
   }
 
   .textReally {
-    font-size: 2.8em;
+    font-size: 3.8em;
     border-top: 1px solid black;
     margin-right: 8px;
   }
 
   .textTrendy {
-    font-size: 2.4em;
+    font-size: 3.4em;
     border-top: 1px solid black;
     margin-right: 8px;
   }
 
   .textRestaurant {
-    font-size: 2em;
+    font-size: 3em;
     border-top: 1px solid black;
   }
 
@@ -156,12 +156,11 @@ header {
   }
 }
 
-
 .socialMedia ul {
   list-style: none;
   float: right;
   margin-right: 10px;
-  margin-top: 0;
+  margin-top: 8px;
   padding-top: 0;
   }
 
@@ -208,30 +207,41 @@ header {
   width: 600px;
 }
 
-// .flickrPic {
-//   height: 500px;
-//   width: 500px;
-//   background-size: cover;
-// }
+
+.tabs{
+  width: 63%;
+  height: 200px;
+  background-color: $medium;
+  margin: 1px;
+  display: inline-block;
+  float: left;
+}
+
+
 
 
 
 // outer tabs style
 .tabBoxWrapper{
   width: 100%;
-  height: 600px;
+  height: 984px;
   background-color: $dark;
   margin: 1px;
   display: block;
   float: left;
+  color: $fontColor;
+  margin-top: 35px;
+  font-size: 0.8em;
+
 
   .tabBox {
   list-style-type: none;
-  margin: 30px 0 0 0;
+  margin: 30px 10px 0 10px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
   height: 22px;
+  font-size: 1.5em;
   }
 
   .tabBox::after{
@@ -268,8 +278,8 @@ header {
     border: 1px solid black;
     padding: 0.5em;
     background-color: $light;
-    width: 100%;
-    height: 500px;
+    width: 790px;
+    height: 780px;
     margin-left: 10px;
   }
 
@@ -277,14 +287,22 @@ header {
     display: none;
   }
 }
+//
+//
 // end outer tabs
 
-// inner (menu) tabs style
-.innerTabsWrapper{
-  width: 570px;
-  height: 500px;
-}
 
+// inner (menu) tabs style
+//
+//
+.innerTabsWrapper{
+  width: 794px;
+  height: auto;
+}
+.appWrapper {
+  width: auto;
+  height: auto;
+}
 .menuTabBox{
   display: block;
   margin-top: 0;
@@ -294,6 +312,7 @@ header {
   width: 135px;
   height: auto;
   float: left;
+  color: $fontColor;
 }
 
 .menuButtons{
@@ -306,6 +325,8 @@ header {
   border-bottom: solid 1px black;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  color: $fontColor;
+  font-size: 1.4em;
 }
 
 .menuButtons:hover{
@@ -313,7 +334,7 @@ header {
 }
 
 .menuTabTitle{
-  color: #E1E3DF;
+  color: $fontColor;
   text-decoration: none;
   width: 115px;
   height: 30px;
@@ -324,14 +345,15 @@ header {
   background-color: $medium;
   padding: 4px 0 5px 2px;
   font-weight: bold;
+  font-size: 1.8em;
 }
 
 .menuContent{
   display: inline-block;
   clear: both;
   float: middle;
-  width: 400px;
-  height: 500px;
+  width: 637px;
+  height: 687px;
   background-color: $medium;
   margin-top: 3px;
   border-top: solid 1px black;
@@ -340,24 +362,29 @@ header {
 .menuHide{
   display: none;
 }
-// end inner tabs style
+
 
 // FOOTER begins
 
-footer{
- width: 72%;
+footer {
+
+ width: 100%;
  height: 106px;
- background-color: $dark;
+ background-color: $medium;
  border: 1px solid black;
  border-radius: 5px;
  display: inline-block;
  margin-left: 142px;
  float: right;
+
+
  h5{
    margin-top: -3px;
    font-family: $logoFont;
    font-size: 30px;
+   color: $fontColor;
  }
+
  .thefoot{
  font-size: 14px;
  margin-top: -33px;
@@ -381,3 +408,143 @@ footer{
  font-style: italic;
  }
 }
+
+#reservations-tab {
+  width: 772px;
+  height: auto;
+  margin: 16px 0 16px 0;
+  color: $fontColor;
+}
+
+
+
+
+.alertBoxWrap{
+  display: block;
+  margin-top: 0;
+  float: right;
+  width: 640px;
+  height: 30px;
+  position: relative;
+
+  .popBox{
+  width: 175px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  right: 16px;
+  top: 6px;
+  margin: 25px 0 0 0;
+  border: solid 1px #39889D;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 10px;
+  font-family: grey;
+  }
+}
+
+.alertBox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  float: right;
+  margin: 6px 5px 0 5px;
+  border-radius: 3px;
+  border: solid 1px $dark;
+  display: inline-block;
+}
+
+.veganIconImg{
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.favIconImg {
+  width: 20px;
+  height: 20px;
+}
+
+.spicyIconImg{
+  width: 18px;
+  height: 18px;
+}
+
+.allergyIconImg{
+  width: 18px;
+  height: 18px;
+}
+
+.alertBoxWrap:hover .popBox{
+  opacity: 1;
+}
+
+//styling reservations tab
+.resHead{
+  font-family: $logoFont;
+}
+.resName{
+  width: 250px;
+  height: 22px;
+}
+
+.resGuests{
+  width: 250px;
+  height: 22px;
+}
+.resDate{
+  width: 250px;
+  height: 22px;
+}
+.resBox{
+  width:16%;
+  height:40px;
+  background-color: $dark;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+  display: block;
+}
+input[type = button]{
+  width:15em;
+  background-color: $dark;
+  color: $fontColor;
+  display:block;
+  margin-top:4%;
+  font-family: $logoFont;
+  font-size: 1.4em;
+}
+
+//end res tab
+
+//styling within apps script
+.appz {
+  width: 640px;
+  height: 142px;
+}
+
+.entreez {
+  width: 640px;
+  height: 100px;
+}
+
+.sidez {
+  width: 640px;
+  height: 10px;
+}
+
+.menu-txt {
+  font-family: $logoFont;
+  font-size: 1.5em;
+  color: $fontColor;
+  height: 1.5em;
+}
+
+.menu-desc {
+  margin: 0;
+  font-family: $logoFont;
+  font-size: 1.5em;
+  color: $fontColor;
+}
+// end inner tabs style
