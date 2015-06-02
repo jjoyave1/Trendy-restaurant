@@ -124,7 +124,7 @@ $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-3", 
 function processDrinks(x){
   x.forEach(function(drk){
   var $element = drinkTemplate(drk);
-  $('#drink-tab').append($element);
+  $('#drinks-tab').append($element);
   });
 };
 // START OF TAB BOX FUNCTIONS

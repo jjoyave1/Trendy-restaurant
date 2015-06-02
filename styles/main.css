@@ -188,6 +188,9 @@ header {
   display: inline-block;
   float: left; }
 
+#story-tab {
+  font-size: 1.4em; }
+
 .tabBoxWrapper {
   width: 100%;
   height: 984px;
@@ -445,7 +448,7 @@ input[type=button] {
 
 .sidez {
   width: 640px;
-  height: 10px; }
+  height: 76px; }
 
 .menu-txt {
   font-family: "Amatic SC", cursive;
