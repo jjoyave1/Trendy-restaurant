@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #D5D1CE;
-  color: #3B4654; }
+  color: #E7D0AB; }
 
 aside {
   background-color: #CBC5BD;
@@ -32,7 +32,8 @@ aside {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #3B4654; }
 
 aside:last-child {
   margin-right: 0; }
@@ -86,7 +87,7 @@ h3 {
   width: 74.41059%;
   height: auto;
   font-family: "Amatic SC", cursive;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 20px; }
 
 .wrapper:last-child {
@@ -107,7 +108,7 @@ header {
   font-family: "Amatic SC", cursive;
   color: black;
   width: 468px;
-  margin-top: 33px;
+  margin-top: 67px;
   float: left; }
 
 .logo ul {
@@ -118,21 +119,21 @@ header {
   display: inline-flex; }
 
 .logo .textA {
-  font-size: 3.4em;
+  font-size: 4.2em;
   margin-right: 8px; }
 
 .logo .textReally {
-  font-size: 2.8em;
+  font-size: 3.8em;
   border-top: 1px solid black;
   margin-right: 8px; }
 
 .logo .textTrendy {
-  font-size: 2.4em;
+  font-size: 3.4em;
   border-top: 1px solid black;
   margin-right: 8px; }
 
 .logo .textRestaurant {
-  font-size: 2em;
+  font-size: 3em;
   border-top: 1px solid black; }
 
 .logo img {
@@ -143,7 +144,7 @@ header {
   list-style: none;
   float: right;
   margin-right: 10px;
-  margin-top: 0;
+  margin-top: 8px;
   padding-top: 0; }
 
 .socialName {
@@ -179,21 +180,33 @@ header {
   height: 400px;
   width: 600px; }
 
+.tabs {
+  width: 63%;
+  height: 200px;
+  background-color: #D5D1CE;
+  margin: 1px;
+  display: inline-block;
+  float: left; }
+
 .tabBoxWrapper {
   width: 100%;
-  height: 600px;
+  height: 984px;
   background-color: #CBC5BD;
   margin: 1px;
   display: block;
-  float: left; }
+  float: left;
+  color: #3B4654;
+  margin-top: 35px;
+  font-size: 0.8em; }
 
 .tabBoxWrapper .tabBox {
   list-style-type: none;
-  margin: 30px 0 0 0;
+  margin: 30px 10px 0 10px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
-  height: 22px; }
+  height: 22px;
+  font-size: 1.5em; }
 
 .tabBoxWrapper .tabBox::after {
   display: none; }
@@ -225,16 +238,20 @@ header {
   border: 1px solid black;
   padding: 0.5em;
   background-color: #E7E2DE;
-  width: 100%;
-  height: 500px;
+  width: 790px;
+  height: 780px;
   margin-left: 10px; }
 
 .tabBoxWrapper .hide {
   display: none; }
 
 .innerTabsWrapper {
-  width: 570px;
-  height: 500px; }
+  width: 794px;
+  height: auto; }
+
+.appWrapper {
+  width: auto;
+  height: auto; }
 
 .menuTabBox {
   display: block;
@@ -244,7 +261,8 @@ header {
   padding-left: 0;
   width: 135px;
   height: auto;
-  float: left; }
+  float: left;
+  color: #3B4654; }
 
 .menuButtons {
   display: block;
@@ -255,13 +273,15 @@ header {
   border-top: solid 1px black;
   border-bottom: solid 1px black;
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-left-radius: 3px;
+  color: #3B4654;
+  font-size: 1.4em; }
 
 .menuButtons:hover {
   background-color: #CBC5BD; }
 
 .menuTabTitle {
-  color: #E1E3DF;
+  color: #3B4654;
   text-decoration: none;
   width: 115px;
   height: 30px;
@@ -270,14 +290,15 @@ header {
 .sel {
   background-color: #D5D1CE;
   padding: 4px 0 5px 2px;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.8em; }
 
 .menuContent {
   display: inline-block;
   clear: both;
   float: middle;
-  width: 400px;
-  height: 500px;
+  width: 637px;
+  height: 687px;
   background-color: #D5D1CE;
   margin-top: 3px;
   border-top: solid 1px black; }
@@ -286,9 +307,9 @@ header {
   display: none; }
 
 footer {
-  width: 72%;
+  width: 100%;
   height: 106px;
-  background-color: #CBC5BD;
+  background-color: #D5D1CE;
   border: 1px solid black;
   border-radius: 5px;
   display: inline-block;
@@ -298,7 +319,8 @@ footer {
 footer h5 {
   margin-top: -3px;
   font-family: "Amatic SC", cursive;
-  font-size: 30px; }
+  font-size: 30px;
+  color: #3B4654; }
 
 footer .thefoot {
   font-size: 14px;
@@ -320,3 +342,119 @@ footer h1 {
   margin-top: -6px;
   float: right;
   font-style: italic; }
+
+#reservations-tab {
+  width: 772px;
+  height: auto;
+  margin: 16px 0 16px 0;
+  color: #3B4654; }
+
+.alertBoxWrap {
+  display: block;
+  margin-top: 0;
+  float: right;
+  width: 640px;
+  height: 30px;
+  position: relative; }
+
+.alertBoxWrap .popBox {
+  width: 175px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  right: 16px;
+  top: 6px;
+  margin: 25px 0 0 0;
+  border: solid 1px #39889D;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 10px;
+  font-family: grey; }
+
+.alertBox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  float: right;
+  margin: 6px 5px 0 5px;
+  border-radius: 3px;
+  border: solid 1px #CBC5BD;
+  display: inline-block; }
+
+.veganIconImg {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px; }
+
+.favIconImg {
+  width: 20px;
+  height: 20px; }
+
+.spicyIconImg {
+  width: 18px;
+  height: 18px; }
+
+.allergyIconImg {
+  width: 18px;
+  height: 18px; }
+
+.alertBoxWrap:hover .popBox {
+  opacity: 1; }
+
+.resHead {
+  font-family: "Amatic SC", cursive; }
+
+.resName {
+  width: 250px;
+  height: 22px; }
+
+.resGuests {
+  width: 250px;
+  height: 22px; }
+
+.resDate {
+  width: 250px;
+  height: 22px; }
+
+.resBox {
+  width: 16%;
+  height: 40px;
+  background-color: #CBC5BD;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+  display: block; }
+
+input[type=button] {
+  width: 15em;
+  background-color: #CBC5BD;
+  color: #3B4654;
+  display: block;
+  margin-top: 4%;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.4em; }
+
+.appz {
+  width: 640px;
+  height: 142px; }
+
+.entreez {
+  width: 640px;
+  height: 100px; }
+
+.sidez {
+  width: 640px;
+  height: 10px; }
+
+.menu-txt {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  color: #3B4654;
+  height: 1.5em; }
+
+.menu-desc {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  color: #3B4654; }
