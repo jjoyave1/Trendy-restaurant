@@ -185,7 +185,7 @@ header {
 
 .tabBoxWrapper .tabBox {
   list-style-type: none;
-  margin: 30px 10px 0 9px;
+  margin: 30px 10px 0 10px;
   padding: 0 0 0.3em 0;
   display: block;
   width: 100%;
@@ -387,9 +387,12 @@ input[type=button] {
 
 .menu-txt {
   font-family: "Amatic SC", cursive;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #3B4654;
+  height: 1.5em; }
 
 .menu-desc {
   margin: 0;
   font-family: "Amatic SC", cursive;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #3B4654; }
