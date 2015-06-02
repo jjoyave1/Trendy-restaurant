@@ -3,45 +3,38 @@
 
 
 var flickrKeyCode = '849c1dd07ac410f7ffc69b61a1e44400';
-var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=5704-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
+var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKeyCode + '&gallery_id=133502986-72157653593281981&format=json&extras=url_m&callback=jsonFlickrApi';
 
-var images = [];
+
 
 $.ajax(url, {
   dataType: 'jsonp',
   jsonpCallback: 'jsonFlickrApi',
   success: function(data) {
+
+
     var photos = data.photos.photo;
-    // processFlickr(photos);
-    images.push(photos);
+    console.log(photos);
 
 
-  _.each(images, function(image) {
+    photos.forEach(function(image) {
 
-    console.log(image.url_m);
-    $('.flickrPics').append('<img src="' + image.url_m + '">');
+      $('.flickrPics').append('<div style="width: 600px; height: 400px; background-image: url(' + image.url_m + '); background-size: cover;"></div>');
+
     });
+
+    var imgSlider = new SimpleSlider(document.querySelector('.flickrPics'),{
+        autoPlay:true,
+        transitionProperty:'left',
+        startValue:'-612px',
+        visibleValue:'0px',
+        endValue:'612px'
+      }
+
+    );
 
   }
 });
-
-
-
-// function processFlickr(pics) {
-//   pics.forEach(function(pic) {
-//     var $element = foodpicsTemplate(pic);
-//     $('.flickrPics').append($element);
-
-//   });
-// };
-
-// var imgSlider = new SimpleSlider(document.getElementById('myslider'));
-
-// console.log(imgSlider);
-
-
-
-
 
 
 
@@ -131,7 +124,7 @@ $.getJSON("http://private-anon-60601716e-restaurantapi.apiary-mock.com/menu-3", 
 function processDrinks(x){
   x.forEach(function(drk){
   var $element = drinkTemplate(drk);
-  $('#drink-tab').append($element);
+  $('#drinks-tab').append($element);
   });
 };
 // START OF TAB BOX FUNCTIONS
