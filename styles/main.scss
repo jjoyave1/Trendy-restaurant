@@ -206,7 +206,7 @@ header {
 // outer tabs style
 .tabBoxWrapper{
   width: 100%;
-  height: 780px;
+  height: 984px;
   background-color: $dark;
   margin: 1px;
   display: block;
@@ -256,7 +256,7 @@ header {
     padding: 0.5em;
     background-color: $light;
     width: 790px;
-    height: 714px;
+    height: 780px;
     margin-left: 10px;
   }
 
@@ -273,8 +273,8 @@ header {
 //
 //
 .innerTabsWrapper{
-  width: 570px;
-  height: 500px;
+  width: 794px;
+  height: auto;
 }
 .appWrapper {
   width: auto;
@@ -350,7 +350,23 @@ header {
   float: right;
   width: 640px;
   height: 30px;
+  position: relative;
 
+  .popBox{
+  width: 175px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  right: 16px;
+  top: 6px;
+  margin: 25px 0 0 0;
+  border: solid 1px #39889D;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 10px;
+  font-family: grey;
+  }
 }
 
 .alertBox {
@@ -361,16 +377,7 @@ header {
   margin: 6px 5px 0 5px;
   border-radius: 3px;
   border: solid 1px $dark;
-  position: relative;
   display: inline-block;
-}
-
-.alertBox:hover {
-  // border: solid 1px $reallyDarkOrange;
-}
-
-.alertBox:hover .popBox {
-  opacity: 1;
 }
 
 .veganIconImg{
@@ -394,17 +401,8 @@ header {
   height: 18px;
 }
 
-.popBox{
-  width: 175px;
-  height: 45px;
-  background-color: white;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin: 25px 0 0 0;
-  border: solid 1px #39889D;
-  border-radius: 3px;
-  opacity: 0.5;
+.alertBoxWrap:hover .popBox{
+  opacity: 1;
 }
 
 //styling reservations tab
