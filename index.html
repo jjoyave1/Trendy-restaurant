@@ -1,223 +1,165 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>The Trendiest of Restaurants</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="styles/vendor/normalize.css">
-  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="styles/main.css">
+    <title>The Trendiest of Restaurants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/vendor/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-
-  <div class="container">
-
-
-
-  <aside><h3>Trendy Stuff</h3>
-      <!-- Scrolling Menu news -->
-      <div class"menunews"> <h3>News</h3>
-        <div style="height:135px;width:160px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-
-        <div class="news">
-          <script type="text/template" id="newsTemplate">
-          <div>
-             <p><%= title %><%= post %></p>
-          </div>
-          </script>
+    <div class="container">
+        <aside>
+            <h3>Trendy Stuff</h3>
+            <!-- Scrolling Menu news -->
+            <div class "menunews">
+                <h3>News</h3>
+                <div style="height:135px;width:160px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+                    <div class="news">
+                        <script type="text/template" id="newsTemplate">
+                            <div>
+                                <p>
+                                    <%=t itle %>
+                                        <%=p ost %>
+                                </p>
+                            </div>
+                        </script>
+                    </div>
+                </div>
             </div>
-
-          </div>
-          </div>
-
-      <!-- Menu Special -->
-      <div class="special"></div>
-
-
-      <div class="gmap">Our location
-
-      <iframe width="160" height="156" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=3734%20Elvis%20Presley%20Blvd%2C%20Memphis%2C%20TN%2038116&key=AIzaSyCuLGTB7wksJsHHNPl7ROzf-r3VvgXobmc"></iframe>
-
-        <div class="locinfo">Address: 3734 Elvis Presley Blvd, Memphis, TN</div>
-      <div class="locph">555.007.5555 email: trendy@tiy.com</div>
-
-    </div>
-  <!--   this is the end of gmap div -->
-
-
-
-
-
-  </aside>
-
-  <div class="wrapper">
-
-
-
-
-
-    <header>
-
-    <div class="logo">
-    <ul>
-      <li class="textA">A  </li>
-      <li class="textReally">Really  </li>
-      <li class="textTrendy">Trendy  </li>
-      <li class="textRestaurant">Restaurant</li>
-
-      <img class="logoImage" src="images/knifeandfork.png">
-      </ul>
-
-    </div><!--this is the end of the logo div -->
-
-    <div class="socialMedia">
-      <ul>
-        <div class="box"><div class="socialName">Instagram</div><li class="instagram"><img id="image" src="images/instagram-icon.png" width="40" height="40"></li></div>
-
-        <div class="box"><div class="socialName">Facebook</div><li class="facebook"><img id="image" src="images/facebook-icon.png" width="33" height="33"></li></div>
-
-        <div class="box"><div class="socialName">Twitter</div><li class="twitter"><img id="image" src="images/twitter-icon.png" width="40" height="40"></li></div>
-
-      </ul>
-
-    </div><!--this is the end of the socialMedia div-->
-
-
-
-
-
-
-
-    </header>
-    <!-- this is the end of the header div-->
-
-     <div class="flickrPics">
-
-    </div> <!--this is the end of the flickrPics div-->
-
-
-    <!--Script for the Food Pics from Flickr-->
-
-
-<!--
+            <!-- Menu Special -->
+            <div class="special"></div>
+            <div class="gmap">Our location
+                <iframe width="160" height="156" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=3734%20Elvis%20Presley%20Blvd%2C%20Memphis%2C%20TN%2038116&key=AIzaSyCuLGTB7wksJsHHNPl7ROzf-r3VvgXobmc"></iframe>
+                <div class="locinfo">Address: 3734 Elvis Presley Blvd, Memphis, TN</div>
+                <div class="locph">555.007.5555 email: trendy@tiy.com</div>
+            </div>
+            <!--   this is the end of gmap div -->
+        </aside>
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <ul>
+                        <li class="textA">A </li>
+                        <li class="textReally">Really </li>
+                        <li class="textTrendy">Trendy </li>
+                        <li class="textRestaurant">Restaurant</li>
+                        <img class="logoImage" src="images/knifeandfork.png">
+                    </ul>
+                </div>
+                <!--this is the end of the logo div -->
+                <div class="socialMedia">
+                    <ul>
+                        <div class="box">
+                            <div class="socialName">Instagram</div>
+                            <li class="instagram"><img id="image" src="images/instagram-icon.png" width="40" height="40"></li>
+                        </div>
+                        <div class="box">
+                            <div class="socialName">Facebook</div>
+                            <li class="facebook"><img id="image" src="images/facebook-icon.png" width="33" height="33"></li>
+                        </div>
+                        <div class="box">
+                            <div class="socialName">Twitter</div>
+                            <li class="twitter"><a href="http://twitter.com"><img id="image" src="images/twitter-icon.png" width="40" height="40"></li>
+                        </div>
+                    </ul>
+                </div>
+                <!--this is the end of the socialMedia div-->
+            </header>
+            <!-- this is the end of the header div-->
+            <div class="flickrPics">
+            </div>
+            <!--this is the end of the flickrPics div-->
+            <!--Script for the Food Pics from Flickr-->
+            <!--
     //   <div id="myslider" style="width:612px; height:612px">
     //       <img src="<%= url_m %>">
     //   </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--   JOE TAB BOX BUILD MAY 27 -->
-
-    <div class="tabBoxWrapper">
-
-
-      <ul class="tabBox">
-        <li class="tabBtns"><a href="#Menu"  class = "tabTitle tabTitleMenu selected">Menu</a></li>
-        <li class="tabBtns"><a href="#Story" class = "tabTitle tabTitleStory">Our Story</a></li>
-        <li class="tabBtns"><a href="#History" class = "tabTitle tabTitleHistory">Restaurant History</a></li>
-        <li class="tabBtns"><a href="#Drinks" class = "tabTitle tabTitleDrinks">Drinks</a></li>
-
-      </ul>
-
-      <div class="tabContent" id="about">
-
-        <div id = "menuBox">
-
-          <div id ="menu-tab">
-
-            <div class="innerTabsWrapper">
-
-              <ul class="menuTabBox">
-                <li class="menuButtons tabTitleApps sel"><a href="#Apps"  class = "menuTabTitle">Appetizers</a></li>
-                <li class="menuButtons tabTitleEntrees"><a href="#Entrees" class = "menuTabTitle ">Entrees</a></li>
-                <li class="menuButtons tabTitleSides"><a href="#Sides" class = "menuTabTitle ">Sides</a></li>
-              </ul>
-
-              <div class="menuContent">
-                <div id = "menuBox">
-                  <div id="apps-tab"> </div>
-                  <div id ="entrees-tab" class = "menuHide"></div>
-                  <div id="sides-tab" class = "menuHide"></div>
-                </div> <!-- END MENUBOX -->
-              </div> <!-- END MENUCONTENT -->
-
-              </div> <!-- END INNER WRAPPER -->
-
-          </div> <!-- END MENU-TAB ID -->
-
-          <p id ="story-tab" class = "hide">Ricotta rubber cheese cheeseburger. Hard cheese jarlsberg blue castello halloumi caerphilly hard cheese blue castello brie. Gouda ricotta monterey jack cut the cheese st. agur blue cheese cheesy feet smelly cheese cottage cheese. Monterey jack.</p>
-          <p id="history-tab" class = "hide">Ricotta edam paneer. Bavarian bergkase fromage cheese on toast pecorino cut the cheese smelly cheese danish fontina blue castello. Camembert de normandie when the cheese comes out everybody's happy everyone loves port-salut cream cheese cheesecake stinking bishop cheese strings. St. agur blue cheese jarlsberg parmesan parmesan.</p>
-          <p id="drinks-tab" class = "hide">Blue castello stinking bishop croque monsieur. Hard cheese cheese strings cheese and wine who moved my cheese babybel manchego hard cheese emmental. Queso monterey jack stinking bishop mascarpone cheddar smelly cheese airedale the big cheese. Cheeseburger croque monsieur manchego stilton hard cheese cheese and biscuits mascarpone cheesy feet. Port-salut cheddar swiss bavarian bergkase.</p>
-        </div><!-- this is the end of the menuBox div-->
-      </div><!-- this is the end of the tabContent div -->
-
-
-    </div><!-- this is the end of the tabBoxWrapper-->
-
-
-  <!-- END TAB BOX -->
-
-
-  <footer>
-
-   </footer>
-
-
-
-  </div><!--this is the end of the wrapper div-->
-
-
-  </div><!--this is the end of the container div-->
-
-
-
-<!-- SCRIPT FOR APPETIZERS -->
-  <script type="template" id="app-template">
-       <div>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
-       </div>
-  </script><!-- END APP SCRIPT -->
-
-<!-- SCRIPT FOR ENTREES -->
+            <!--   JOE TAB BOX BUILD MAY 27 -->
+            <div class="tabBoxWrapper">
+                <ul class="tabBox">
+                    <li class="tabBtns"><a href="#Menu" class="tabTitle tabTitleMenu selected">Menu</a></li>
+                    <li class="tabBtns"><a href="#Story" class="tabTitle tabTitleStory">Our Story</a></li>
+                    <li class="tabBtns"><a href="#History" class="tabTitle tabTitleHistory">Restaurant History</a></li>
+                    <li class="tabBtns"><a href="#Drinks" class="tabTitle tabTitleDrinks">Drinks</a></li>
+                </ul>
+                <div class="tabContent" id="about">
+                    <div id="menuBox">
+                        <div id="menu-tab">
+                            <div class="innerTabsWrapper">
+                                <ul class="menuTabBox">
+                                    <li class="menuButtons tabTitleApps sel"><a href="#Apps" class="menuTabTitle">Appetizers</a></li>
+                                    <li class="menuButtons tabTitleEntrees"><a href="#Entrees" class="menuTabTitle ">Entrees</a></li>
+                                    <li class="menuButtons tabTitleSides"><a href="#Sides" class="menuTabTitle ">Sides</a></li>
+                                </ul>
+                                <div class="menuContent">
+                                    <div id="menuBox">
+                                        <div id="apps-tab"> </div>
+                                        <div id="entrees-tab" class="menuHide"></div>
+                                        <div id="sides-tab" class="menuHide"></div>
+                                    </div>
+                                    <!-- END MENUBOX -->
+                                </div>
+                                <!-- END MENUCONTENT -->
+                            </div>
+                            <!-- END INNER WRAPPER -->
+                        </div>
+                        <!-- END MENU-TAB ID -->
+                        <p id="story-tab" class="hide">Ricotta rubber cheese cheeseburger. Hard cheese jarlsberg blue castello halloumi caerphilly hard cheese blue castello brie. Gouda ricotta monterey jack cut the cheese st. agur blue cheese cheesy feet smelly cheese cottage cheese. Monterey jack.</p>
+                        <p id="history-tab" class="hide">Ricotta edam paneer. Bavarian bergkase fromage cheese on toast pecorino cut the cheese smelly cheese danish fontina blue castello. Camembert de normandie when the cheese comes out everybody's happy everyone loves port-salut cream cheese cheesecake stinking bishop cheese strings. St. agur blue cheese jarlsberg parmesan parmesan.</p>
+                        <p id="drinks-tab" class="hide">Blue castello stinking bishop croque monsieur. Hard cheese cheese strings cheese and wine who moved my cheese babybel manchego hard cheese emmental. Queso monterey jack stinking bishop mascarpone cheddar smelly cheese airedale the big cheese. Cheeseburger croque monsieur manchego stilton hard cheese cheese and biscuits mascarpone cheesy feet. Port-salut cheddar swiss bavarian bergkase.</p>
+                    </div>
+                    <!-- this is the end of the menuBox div-->
+                </div>
+                <!-- this is the end of the tabContent div -->
+            </div>
+            <!-- this is the end of the tabBoxWrapper-->
+            <!-- END TAB BOX -->
+            <footer>
+            </footer>
+        </div>
+        <!--this is the end of the wrapper div-->
+    </div>
+    <!--this is the end of the container div-->
+    <!-- SCRIPT FOR APPETIZERS -->
+    <script type="template" id="app-template">
+        <div>
+            <span><%= item %></span>
+            <span><%= price %></span>
+            <p>
+                <%=d escription %>
+            </p>
+        </div>
+    </script>
+    <!-- END APP SCRIPT -->
+    <!-- SCRIPT FOR ENTREES -->
     <script type="template" id="entree-template">
-       <div>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
-       </div>
-  </script><!-- END ENTREE SCRIPT -->
-
-<!-- SCRIPT FOR SIDES -->
+        <div>
+            <span><%= item %></span>
+            <span><%= price %></span>
+            <p>
+                <%=d escription %>
+            </p>
+        </div>
+    </script>
+    <!-- END ENTREE SCRIPT -->
+    <!-- SCRIPT FOR SIDES -->
     <script type="template" id="side-template">
-       <div>
-         <span><%= item %></span>
-         <span><%= price %></span>
-         <p><%= description %></p>
-       </div>
-  </script><!-- END SIDE SCRIPT -->
-
-  <script src="scripts/vendor/jquery.min.js"></script>
-  <script src="scripts/vendor/underscore.min.js"></script>
-  <script src="scripts/vendor/simpleslider.min.js"></script>
-
-  <script src="scripts/main.js"></script>
-
+        <div>
+            <span><%= item %></span>
+            <span><%= price %></span>
+            <p>
+                <%=d escription %>
+            </p>
+        </div>
+    </script>
+    <!-- END SIDE SCRIPT -->
+    <script src="scripts/vendor/jquery.min.js"></script>
+    <script src="scripts/vendor/underscore.min.js"></script>
+    <script src="scripts/vendor/simpleslider.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
