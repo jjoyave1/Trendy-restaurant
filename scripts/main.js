@@ -18,7 +18,6 @@ $.ajax(url, {
 
   _.each(images, function(image) {
 
-    console.log(image.url_m);
     $('.flickrPics').append('<img src="' + image.url_m + '">');
     });
 
