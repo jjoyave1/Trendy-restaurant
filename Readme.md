@@ -1,6 +1,8 @@
 
 Our group is: Joe, Jim, Jamie and Khalif.
 
+deployed: http://jjoyave1.github.io/Trendy-restaurant
+
 Your task is to create a clean one page website that gives our customers as much info about us as possible. The following are required:
 
 A new logo
